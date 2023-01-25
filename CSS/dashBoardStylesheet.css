@@ -1,0 +1,144 @@
+    body{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        background: rgb(255, 255, 255);
+        font-family: roboto;
+    }
+    .container{
+        margin-right: 125px;
+        padding: 0px;
+        height: auto;
+        margin-bottom: 30px;
+    }
+    .slidebar-icon{
+        height: 20px;
+        width: 20px;
+        margin: 20px 0px 0px 15px;
+        float: left;
+        display: inline;
+    }
+    .logo-image{
+        width:142px;
+        height: 30px;
+        margin: 17px 0px 0px 10px;
+        float: left;
+    }
+    .search-icon{
+        width: 16px;
+        height: 16px;
+        margin: 22px;
+        margin-left: 80px;
+        float: left;
+        
+    }
+    .notification-icon{
+        width: 21px;
+        height: 21px;
+        float: right;
+        position: relative;
+        top: 20px;
+        right: 50px;
+    }
+    .profile-image{
+        width: 35px;
+        height: 35px;
+        float: right;
+        position: relative;
+        top: 12px;
+        left: 40px;
+    }
+    .downword-arrow{
+        width: 40px;
+        height: 20px;
+        float: right;
+        position: relative;
+        left: 227px;
+        top: 19px;
+    }
+    .i1{
+        width: 25px;
+        height: 25px;
+        margin-left: 10px;
+    }
+    .i2{
+        width: 25px;
+        height: 25px;
+        margin-left: 45px;
+    }
+    .i3{
+        width: 25px;
+        height: 25px;
+        margin-left: 45px;
+    }
+    .i4{
+        width: 25px;
+        height: 25px;
+        margin-left: 45px;
+    }
+    .i5{
+        width: 25px;
+        height: 25px;
+        margin-left: 45px;
+    }
+    .i6{
+        width: 25px;
+        height: 25px;
+        margin-left: 45px;
+    }
+    .i7{
+        width: 25px;
+        height: 25px;
+        margin-left: 45px;
+    }
+    .icon1>p{
+        display: inline-block;
+        margin-left: 10px;
+        font-size: 15px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .icon2>p{
+        display: inline-block;
+        margin-left: 10px;
+        font-size: 15px;
+        margin-top: 10px;
+    }
+    .icon3>p{
+        display: inline-block;
+        margin-left: 10px;
+        font-size: 15px;
+        margin-top: 10px;
+    }
+    .icon4>p{
+        display: inline-block;
+        margin-left: 10px;
+        font-size: 15px;
+        margin-top: 10px;
+    }
+    .icon5>p{
+        display: inline-block;
+        margin-left: 10px;
+        font-size: 15px;
+        margin-top: 10px;
+    }
+    .icon6>p{
+        display: inline-block;
+        margin-left: 10px;
+        font-size: 15px;
+        margin-top: 10px;
+    }
+    .icon7>p{
+        display: inline-block;
+        margin-left: 10px;
+        font-size: 15px;
+        margin-top: 10px;
+    }
+    .icon1{
+        display: inline-block;
+        padding-right: 50px;
+        margin-left: 34px;
+        margin-top: 18px;
+        background: rgb(255 239 239);
+        border-radius: 2px;
+    }

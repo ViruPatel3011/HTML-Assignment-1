@@ -2,11 +2,11 @@ body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background: rgb(216, 224, 231);
+    background: #FAFAFA;
     font-family: robot;
 }
 .left-logo-img{
-    border: 15px solid white;
+    border: 15px solid #FFFFFF;
     border-radius: 50%;
     width: 80%;
     height: auto;
@@ -21,12 +21,22 @@ body{
 .col-right-css{
     margin-left: 50px;
 }
-.dummy-text{
-    font-size: 29px;
+.text{
+    font-size: 35px;
     margin-top: 20px;
+    font-style: Roboto, Light;
 }
-.col-right-css>H4{
+.text2 {
+    font-style: Roboto, Light;
+    font-size: 35px;
+}
+.text b{
+    
+    color: #C8242F;
+}
+.col-right-css>h4{
     font-size: 22px;
+    font-style: Roboto;
 }
 .text-field{
     margin-top: 20px;
@@ -36,22 +46,29 @@ body{
     margin-top: 20px;
     border-radius: 30px;
     padding: 3px 25px 5px 25px; 
-    background-color: rgb(212, 32, 32);
+    background-color: #C8242F;
     color: white;
-    font-size: 13px;
+    font-size: 19px;
     border: none;
     margin-bottom: 15px;
+    width: 122px;
+    height: 48px;
+
+
 }
 span{
     margin-left: 210px;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 400;
+    color: #ADADAD;
 }
 .bottom{
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 400;
+    color: #ADADAD;
 }
 .bottom>a{
     text-decoration: none;
     color: red;
 }
+

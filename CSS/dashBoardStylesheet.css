@@ -348,11 +348,13 @@ body {
 #green {
 
     background-color: green;
+    margin-right: 10px;
 }
 
 #orange {
 
     background-color: orangered;
+    margin-right: 10px;
 }
 
 #yellow {
@@ -435,7 +437,7 @@ body {
 
 }
 .table #p6{
-    background-color: #EBFFEF; color: #3CDD5F;
+    background-color: #F8F8F8; color: #BABABA;
     width: 50px;
     height: 26px;
     text-align: center;
@@ -451,7 +453,7 @@ body {
 
 }
 .table #p8{
-    background-color: #EBFFEF; color: #3CDD5F;
+    background-color: #FFF5F5; color: #FF4545;
     width: 50px;
     height: 26px;
     text-align: center;
@@ -459,8 +461,7 @@ body {
 
 }
 .table #p9{ 
-    background-color: #FFF5F5; 
-    color: #FF4545;
+    background-color:#EBFFEF; color: #3CDD5F;
     width: 50px;
     height: 26px;
     text-align: center;

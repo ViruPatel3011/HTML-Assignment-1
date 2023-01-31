@@ -1,0 +1,397 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link rel="stylesheet" href="./CSS/innerpage.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div>
+            <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #ffffff;">
+                <div class="container-fluid">
+                    <img src="./Images/HTML Assets/images/menu-bar.svg" alt="logo" class="dashboard-toggle-img">
+                    <a class="navbar-brand" href="#"><img src="./Images/HTML Assets/images/logo.svg" alt="logo"
+                            class="dashboard-img"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span><img src="./Images/HTML Assets/images/menu-bar.svg" alt="logo"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <img class="offcanvas-title" id="offcanvasNavbarLabel"
+                                src="./Images/HTML Assets/images/mobile-header-logo.svg"></img>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-start flex-grow-1">
+                                <li class="nav-item d-flex align-items-center dashboard-search-toggle">
+                                    <img src="./Images/HTML Assets/images/search-icon.svg" alt=""
+                                        class="dashboard-search-icon">
+                                    <div class="searchspace">
+                                        <input type="search" class="form-control rounded searchbar" placeholder="Search"
+                                            aria-label="Search" aria-describedby="search-addon" />
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <ul class="navbar-nav justify-content-end dashboard-nav-sidebar-toggle">
+                                <li class="nav-item d-flex align-items-center">
+                                    <div class="sidebar-detail dashbord-sidebar-detail dashboard-active-tab d-flex">
+                                        <img src="./Images/HTML Assets/images/dashboard-active.svg" alt=""
+                                            class="dashboard-active sidebarimg">
+                                        <div class="">Dashboard</div>
+                                    </div>
+                                </li>
+                                <li class="nav-item d-flex align-items-center">
+                                    <div class="sidebar-detail d-flex">
+                                        <img src="./Images/HTML Assets/images/graph-default.svg" alt=""
+                                            class="graph-default sidebarimg ">
+                                        <div class="">Analysis</div>
+                                    </div>
+                                </li>
+                                <li class="nav-item d-flex align-items-center">
+                                    <div class="sidebar-detail d-flex">
+                                        <img src="./Images/HTML Assets/images/inbox-default.svg" alt=""
+                                            class="inbox-default sidebarimg ">
+                                        <div class="">Inbox</div>
+                                    </div>
+                                </li>
+                                <li class="nav-item d-flex align-items-center">
+                                    <div class="sidebar-detail d-flex">
+                                        <img src="./Images/HTML Assets/images/clock-default.svg" alt=""
+                                            class="clock-default sidebarimg ">
+                                        <div class="">History</div>
+                                    </div>
+                                </li>
+                                <li class="nav-item d-flex align-items-center">
+                                    <div class="sidebar-detail d-flex">
+                                        <img src="./Images/HTML Assets/images/user-default.svg" alt=""
+                                            class="user-default sidebarimg ">
+                                        <div class="">Users</div>
+                                    </div>
+                                </li>
+                                <li class="nav-item d-flex align-items-center">
+                                    <div class="sidebar-detail d-flex">
+                                        <img src="./Images/HTML Assets/images/maintenance-default.svg" alt=""
+                                            class="maintenance-default sidebarimg ">
+                                        <div class="">Maintenance</div>
+                                    </div>
+                                </li>
+                                <li class="nav-item d-flex align-items-center">
+                                    <div class="sidebar-detail d-flex">
+                                        <img src="./Images/HTML Assets/images/setting-default.svg" alt=""
+                                            class="setting-default sidebarimg ">
+                                        <div class="">Setting</div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <ul class="navbar-nav justify-content-end">
+                                <li class="nav-item d-flex align-items-center">
+                                    <img src="./Images/HTML Assets/images/notification-icon.svg" alt=""
+                                        class="dashboard-notification-icon">
+                                    <img src="./Images/HTML Assets/images/profile.png" alt=""
+                                        class="dashboard-profile-icon">
+                                    <div>John Doe</div>
+                                    <img src="./Images/HTML Assets/images/downward-arrow.svg" alt=""
+                                        class="dashboard-select-downward">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="container-fluid well" id="home" style="display:block; padding-top:60px;">
+                <div class="row">
+                    <div class="col-lg-2 dashboard-sidebar-toggle">
+                        <div class="sidebar">
+                            <div class="sidebar-detail dashbord-sidebar-detail dashboard-active-tab d-flex">
+                                <img src="./Images/HTML Assets/images/dashboard-active.svg" alt=""
+                                    class="dashboard-active sidebarimg">
+                                <div class="">Dashboard</div>
+                            </div>
+                            <div class="sidebar-detail d-flex">
+                                <img src="./Images/HTML Assets/images/graph-default.svg" alt=""
+                                    class="graph-default sidebarimg ">
+                                <div class="">Analysis</div>
+                            </div>
+                            <div class="sidebar-detail d-flex">
+                                <img src="./Images/HTML Assets/images/inbox-default.svg" alt=""
+                                    class="inbox-default sidebarimg ">
+                                <div class="">Inbox</div>
+                            </div>
+                            <div class="sidebar-detail d-flex">
+                                <img src="./Images/HTML Assets/images/clock-default.svg" alt=""
+                                    class="clock-default sidebarimg ">
+                                <div class="">History</div>
+                            </div>
+                            <div class="sidebar-detail d-flex">
+                                <img src="./Images/HTML Assets/images/user-default.svg" alt=""
+                                    class="user-default sidebarimg ">
+                                <div class="">Users</div>
+                            </div>
+                            <div class="sidebar-detail d-flex">
+                                <img src="./Images/HTML Assets/images/maintenance-default.svg" alt=""
+                                    class="maintenance-default sidebarimg ">
+                                <div class="">Maintenance</div>
+                            </div>
+                            <div class="sidebar-detail d-flex">
+                                <img src="./Images/HTML Assets/images/setting-default.svg" alt=""
+                                    class="setting-default sidebarimg ">
+                                <div class="">Setting</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-10">
+                        <p style="font-size: 30px; margin-bottom: 0px;">Analysis</p>
+
+
+
+                        <form action="" style="background-color: rgb(220, 218, 213); padding: 20px;">
+                            <p style="margin-left:30px; font-size: 20px;">One Column</p>
+                            <div class="form-row">
+                                <div class="form-group col-lg-12">
+                                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Name">
+                                </div>
+
+                            </div>
+
+                            <div class="form-row  mt-10">
+                                <select class="custom-select  col-lg-12 col-md-12 col-sm-12 col-12"
+                                    id="inlineFormCustomSelectPref">
+                                    <option selected>Dropdown</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-lg-12">
+                                    <textarea class="form-control" placeholder="Multiple Lines"
+                                        id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+                            </div>
+
+                            <p class="second-col " style="margin-left:30px; font-size: 20px; margin-top: 20px;">
+                                Two Column
+                            </p>
+
+
+                            <div class="form-row">
+
+                                <div class="row ">
+                                    <div class="col-12 col-sm-6 mb-2">
+                                        <input type="text" class="form-control" placeholder="Name">
+                                    </div>
+
+                                    <div class="col-12 col-sm-6 mb-2">
+
+                                        <input type="text" class="form-control" placeholder="johndoe">
+                                    </div>
+                                </div>
+                                <div class="row ">
+                                    <div class="col-12 col-sm-6 mb-2">
+                                        <input type="password" class="form-control" placeholder="Password">
+                                    </div>
+
+
+                                    <div class="col-12 col-sm-6 mb-2">
+                                        <select class="form-control">
+                                            <option selected>Dropdown</option>
+                                            <option>...</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+
+                            <p class="third-col " style="margin-left:30px; font-size: 20px; margin-top: 20px;">
+                                Third Column
+                            </p>
+
+
+
+                            <div class="row">
+                                <div class="col-md-4 col-lg-4 col-sm-6">
+                                    <input type="text" class="form-control" id="inputCity">
+                                </div>
+                                <div class="col-md-4 col-lg-4 col-sm-6">
+                                    <input type="password" class="form-control" id="inputCity" value="......">
+                                </div>
+                                <div class="col-md-4 col-lg-4 col-sm-6">
+                                    <input type="text" placeholder="johndoe" disabled class="form-control" id="inputCity"
+                                        style="border: 1px dashed gray;">
+                                </div>
+
+
+
+                            </div>
+                            <p class="fourth-col " style="margin-left:30px; font-size: 20px; margin-top: 20px;">
+                                Four Column
+                            </p>
+
+
+
+                            <div class="row">
+                                <div class="col-md-3 col-sm-6 col-12">
+                                    <input type="text" class="form-control" id="inputCity">
+                                </div>
+                                <div class="col-md-3 col-sm-6 col-12">
+                                    <input type="password" class="form-control" id="inputCity" value="......">
+                                </div>
+                                <div class="col-md-3 col-sm-6 col-12">
+                                    <input type="text" placeholder="johndoe" class="form-control" id="inputCity">
+                                </div>
+                                <div class="col-md-3 col-sm-6 col-12">
+                                    <select class="form-control">
+                                        <option selected>Dropdown</option>
+                                        <option>...</option>
+                                    </select>
+                                </div>
+
+
+                            </div>
+                            <div class="row">
+                                <h4 style="margin-bottom: 20px;">Other Design Element</h4>
+                            </div>
+                            <div class="row">
+                                <h6>File Upload</h6>
+                            </div>
+                            <div class="row">
+                                <div class="file-section">
+                                    <button class="btn1">
+                                        <img src="./Images/HTML Assets/images/cloud-upload-icon.svg"
+                                            alt="This image can't be loaded">
+                                        <p style="margin-bottom: 0px;">Upload</p>
+                                    </button>
+                                    <small class="small3">No item selected</small>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <h6>Radio Button</h6>
+                            </div>
+
+                            <div class="row">
+                                <div class="radio">
+                                    <input type="radio" class="radio1" name="r1">option 1
+                                    <input type="radio" class="radio2" name="r1" checked>option 2
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <h6>Check Box</h6>
+                            </div>
+                            <div class="row">
+                                <div class="checkbox">
+                                    <input type="checkbox" class="radio1" name="r1">option 1
+                                    <input type="checkbox" class="radio2" name="r2" checked>option 2
+                                </div>
+                            </div>
+                            <div class="row">
+                                <h4>Snackbar</h4>
+                            </div>
+
+                            <div class="row">
+                                <div class="snackbar-row1">
+                                    <div class="row1-leftitem ">
+                                        <img src="./Images/HTML Assets/images/error-icon.svg"
+                                            alt="This image can't be loaded"
+                                            style="width: 20px; height: auto; margin-left: 10px;">
+                                        <h5>This is an error Message</h5>
+
+                                    </div>
+                                    <div class="row1-rightitem ">
+                                        <img src="./Images/HTML Assets/images/info-icon.svg"
+                                            alt="This image can't be loaded"
+                                            style="width: 20px; height: auto; margin-left: 10px;">
+                                        <h5>This is an information Message</h5>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="row">
+                                <div class="snackbar-row2 ">
+                                    <div class="row2-leftitem ">
+                                        <img src="./Images/HTML Assets/images/warning-icon.svg" alt="This image can't be loaded" style="width: 20px; height: auto; margin-left: 10px;">
+                                        <h5>This is a warning Message</h5>
+                                        
+                                    </div>
+                                    <div class="row2-rightitem ">
+                                        <img src="./Images/HTML Assets/images/success-icon.svg" alt="This image can't be loaded" style="width: 20px; height: auto; margin-left: 10px;">
+                                        <h5>This is a success Message</h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <h4>Call to action</h4>
+                            </div>
+
+                            <div class="row">
+                                <div class="button">
+                                <button class="left-button">Primary</button>
+                                <button class="right-button">Secondary</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h4 class="tabs-h4">Tabs</h4>
+                        </div>
+
+                        <div class="row">
+                            <div class="tabs">
+                                <p class="tab">Tab1</p>
+                                <p class="tab1">Tab2</p>
+                                <p class="tab1">Tab3</p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="horizontal">
+                                <hr class="hori2">
+                                <hr class="hori1">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="bottom">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+                            </div>
+                        </div>
+
+
+                        </form>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossorigin="anonymous"></script>
+
+    </body>
+
+    </html>

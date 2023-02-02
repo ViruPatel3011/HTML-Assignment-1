@@ -1,16 +1,16 @@
-.maindashboard {
+.dashboard-main {
     background-color: #fafafa;
     height: 1200px;
     margin-top: 1%;
   }
-  .dashboard-img {
+  .img-dashboard {
     width: 142px;
     height: 30px;
     margin-left: 25px;
     margin-right: 70px;
   }
   
-  .dashboard-search-icon {
+  .search-icon {
     width: 16px;
     height: 16px;
     margin-right: 15px;
@@ -19,28 +19,28 @@
     width: auto;
     border: none;
   }
-  .dashboard-notification-icon {
+  .notification-icon {
     margin-right: 50px;
   }
   
-  .dashboard-profile-icon {
+  .profile-icon {
     width: 44px;
     height: 44px;
     margin-right: 12px;
   }
   
-  .dashboard-select-downward {
+  .select-downward {
     margin-left: 15px;
   }
   
-  .sidebarimg {
+  .img-sidebar {
     max-width: 25px;
     max-height: 25px;
     color: #c8242f;
     margin: 0 10px 0 0;
   }
   
-  .dashbord-sidebar-detail {
+  .dashbord-sidebar-info{
     background: #fff3f4 0% 0% no-repeat padding-box;
     border-radius: 5px;
     opacity: 1;
@@ -60,8 +60,8 @@
       display: none;
     }
   
-    .dashboard-notification-icon,
-    .dashboard-select-downward {
+    .notification-icon,
+    .select-downward {
       display: none;
     }
   
@@ -73,7 +73,7 @@
       display: none;
     }
   
-    .dashbord-sidebar-detail {
+    .dashbord-sidebar-info{
       width: 500px;
     }
   
@@ -91,56 +91,56 @@
   .feature-item {
     width: 190px;
   }
-  .cardbodyfeature {
+  .bodyfeature {
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
     height: 116px;
     border: 2px solid;
   }
   
-  .featurerow {
+  .allfeature {
     display: flex;
     justify-content: center !important;
     float: left;
     justify-content: space-between;
   }
   
-  .dashboardtxt {
+  .main-txt {
     font-weight: 600;
     margin-bottom: 10px;
   }
   
-  .disc1 {
+  .dotsdata1 {
     width: 100px;
   }
-  .dot1 {
+  .point1 {
     background-color: #c8242f;
     width: 15px;
     height: 15px;
     border-radius: 50%;
   }
-  .dot2 {
+  .point2 {
     width: 15px;
     height: 15px;
     border-radius: 50%;
     background-color: #a2b86c;
   }
-  .dot3 {
+  .point3 {
     width: 15px;
     height: 15px;
     border-radius: 50%;
     background-color: #f16c20;
   }
-  .dot4 {
+  .point4 {
     width: 15px;
     height: 15px;
     border-radius: 50%;
     background-color: #ebc844;
   }
-  .dis1,
-  .dis2,
-  .dis3,
-  .dis4 {
+  .dotline1,
+  .dotline2,
+  .dotline3,
+  .dotline4 {
     display: flex;
   }
   .dottext {
@@ -148,18 +148,18 @@
   }
   
   @media screen and (max-width: 361px) {
-    .disc1 {
+    .dotsdata {
       margin-left: 0%;
       margin-right: 10%;
     }
-    .disc2 {
+    .dotsdata2 {
       margin-left: 0%;
     }
   }
   
   
   
-  .bottomtable {
+  .last-table {
     width: auto;
     overflow-x: auto;
     background-color: #ffffff;

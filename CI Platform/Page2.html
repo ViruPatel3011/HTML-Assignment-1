@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./CSS/page2.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+  <title>Document</title>
+</head>
+
+<body>
+  <section class="main">
+
+
+
+    <nav class="navbar navbar-expand-lg pt-2">
+      <div class="container-fluid p-0">
+        <img class="px-3" src="./Assets/logo.png" alt="">
+
+
+
+
+
+        <div class="d-flex float-end d-lg-none d-block" id="temp">
+          <div class="nav-item px-3 float-end ">
+            <img src="./Assets/user-img.png" alt="" class="rounded-circle" width="40px" height="40px">
+          </div>
+          <div class="nav-item pe-3">
+            <div class="dropdown mt-1 ">
+              <button
+                class="btn btn-secondary dropdown-toggle bg-transparent border text-dark border-0 pt-0 ps-0 fs-6 pt-1"
+                type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Evan Donohue
+              </button>
+              <ul class="dropdown-menu ">
+                <li><button class="dropdown-item" type="button">Dashboard</button></li>
+                <li><button class="dropdown-item" type="button">My Account</button></li>
+                <li><button class="dropdown-item" type="button">Help center</button></li>
+                <li><button class="dropdown-item" type="button">Log Out</button></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+
+        <button class="navbar-toggler" href="#offcanvasExample" role="button" data-bs-toggle="offcanvas"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <div class="offcanvas offcanvas-start" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-header">
+            <img src="./Assets/logo.png" alt="">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+
+              <div class="d-flex float-end d-sm-none d-block mb-3" id="temp1">
+                <div class="nav-item px-3 float-end ">
+                  <img src="./Assets/user-img.png" alt="" class="rounded-circle" width="40px" height="40px">
+                </div>
+                <div class="nav-item pe-3">
+                  <div class="dropdown mt-1 ">
+                    <button
+                      class="btn btn-secondary dropdown-toggle bg-transparent border text-dark border-0 pt-0 ps-0 fs-6 pt-1"
+                      type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Evan Donohue
+                    </button>
+                    <ul class="dropdown-menu ">
+                      <li><button class="dropdown-item" type="button">Dashboard</button></li>
+                      <li><button class="dropdown-item" type="button">My Account</button></li>
+                      <li><button class="dropdown-item" type="button">Help center</button></li>
+                      <li><button class="dropdown-item" type="button">Log Out</button></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <li class="nav-item px-3">
+                <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle bg-transparent border text-dark border-0 p-0 mt-1"
+                    type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Explore
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><button class="dropdown-item" type="button">Action</button></li>
+                    <li><button class="dropdown-item" type="button">Another action</button></li>
+                    <li><button class="dropdown-item" type="button">Something else here</button>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item px-3">
+                <p class="mt-1">Stories</p>
+              </li>
+              <li class="nav-item px-3">
+                <p class="mt-1">News</p>
+              </li>
+              <li class="nav-item px-3">
+                <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle bg-transparent border text-dark border-0 p-0 mt-1"
+                    type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Policy
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><button class="dropdown-item" type="button">Action</button></li>
+                    <li><button class="dropdown-item" type="button">Another action</button></li>
+                    <li><button class="dropdown-item" type="button">Something else here</button>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+            </ul>
+
+            <div class="nav-item px-3 float-end user-pic">
+              <img src="./Assets/user-img.png" alt="" class="rounded-circle" width="40px" height="40px">
+            </div>
+            <div class="nav-item pe-3 user-profile">
+              <div class="dropdown mt-1">
+                <button
+                  class="btn btn-secondary dropdown-toggle bg-transparent border text-dark border-0 pt-0 ps-0 fs-6 pt-1"
+                  type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Evan Donohue
+                </button>
+                <ul class="dropdown-menu">
+                  <li><button class="dropdown-item" type="button">Action</button></li>
+                  <li><button class="dropdown-item" type="button">Another action</button></li>
+                  <li><button class="dropdown-item" type="button">Something else here</button></li>
+                </ul>
+              </div>
+            </div>
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </nav>
+
+    <hr class="m-0">
+
+
+
+
+
+    <!-- Search Mission Line  -->
+
+
+    <!-- Search Input  -->
+    <div class="row ">
+      <div class="col-lg-4 border-end pt-2 ps-5 search">
+        <form class="bs-example bs-example-form " role="form">
+          <div class="input-group input-group-sm">
+            <span class="input-group-addon mt-1"><img src="./Assets/search.png" class="mb-2 me-1" alt=""></span>
+            <input type="text" class="form-control" placeholder="Search mission..." style="border: none !important;">
+          </div>
+        </form>
+      </div>
+
+
+      <!-- Country dropdown  -->
+      <div class="col-lg-2 border-end col-md-6 col-sm-6 col-xs-12 menu">
+        <div class="dropdown mt-2">
+          <button class="btn btn-secondary dropdown-toggle bg-transparent border text-dark border-0 pt-0 ps-0 fs-6"
+            type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Country
+          </button>
+          <ul class="dropdown-menu">
+            <li><button class="dropdown-item" type="button">USA</button></li>
+            <li><button class="dropdown-item" type="button">California</button></li>
+            <li><button class="dropdown-item" type="button">New York</button></li>
+            <li><button class="dropdown-item" type="button">Afghanistan</button></li>
+            <li><button class="dropdown-item" type="button">Algeria</button></li>
+          </ul>
+        </div>
+      </div>
+
+
+      <!-- City dropdown  -->
+
+      <div class="col-lg-2 border-end col-md-6 col-sm-6 col-xs-12 menu">
+        <div class="dropdown mt-2">
+          <button class="btn btn-secondary dropdown-toggle bg-transparent border text-dark border-0 pt-0 ps-0 fs-6"
+            type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            City
+          </button>
+          <ul class="dropdown-menu">
+            <li><button class="dropdown-item" type="button">#</button></li>
+            <li><button class="dropdown-item" type="button">#</button></li>
+            <li><button class="dropdown-item" type="button">#</button></li>
+          </ul>
+        </div>
+      </div>
+
+
+      <!-- Theme dropdown  -->
+
+      <div class="col-lg-2 border-end col-md-6 col-sm-6 col-xs-12 menu">
+        <div class="dropdown mt-2">
+          <button class="btn btn-secondary dropdown-toggle bg-transparent border text-dark border-0 pt-0 ps-0 fs-6"
+            type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Theme
+          </button>
+          <ul class="dropdown-menu">
+            <li><button class="dropdown-item" type="button">Action</button></li>
+            <li><button class="dropdown-item" type="button">Another action</button></li>
+            <li><button class="dropdown-item" type="button">Something else here</button></li>
+          </ul>
+        </div>
+      </div>
+
+
+      <!-- Skills dropdown  -->
+
+      <div class="col-lg-2 border-end col-md-6 col-sm-6 col-xs-12 menu">
+        <div class="dropdown mt-2">
+          <button class="btn btn-secondary dropdown-toggle bg-transparent border text-dark border-0 pt-0 ps-0 fs-6"
+            type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Skill
+          </button>
+          <ul class="dropdown-menu">
+            <li><button class="dropdown-item" type="button">Action</button></li>
+            <li><button class="dropdown-item" type="button">Another action</button></li>
+            <li><button class="dropdown-item" type="button">Something else here</button></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+    </div>
+    <hr class="m-0">
+
+
+
+
+    <!-- Filter Mission  -->
+
+    <div class="d-none d-lg-block">
+      <ul class="d-flex mt-2 " style="list-style: none;">
+        <li class="items d-flex border px-2 ms-2">
+          <p style="font-size: 12px;">Tree Plantation</p>
+          <img src="./Assets/cancel.png" alt="" width="10px" height="10px" class="mt-1 ps-1">
+        </li>
+        <li class="items d-flex ms-3 px-2 border">
+          <p style="font-size: 12px;">Canada</p>
+          <img src="./Assets/cancel.png" alt="" width="10px" height="10px" class="mt-1 ps-1">
+        </li>
+        <li class="items d-flex ms-3 px-2 border">
+          <p style="font-size: 12px;">Toronto</p>
+          <img src="./Assets/cancel.png" alt="" width="10px" height="10px" class="mt-1 ps-1">
+        </li>
+        <li class="items d-flex ms-3 px-2 border">
+          <p style="font-size: 12px;">Montreal</p>
+          <img src="./Assets/cancel.png" alt="" width="10px" height="10px" class="mt-1 ps-1">
+        </li>
+        <li class="items d-flex ms-3 px-2 border">
+          <p style="font-size: 12px;">Environmrnt</p>
+          <img src="./Assets/cancel.png" alt="" width="10px" height="10px" class="mt-1 ps-1">
+        </li>
+        <li class="items d-flex ms-3 px-2 border">
+          <p style="font-size: 12px;">Nutrition</p>
+          <img src="./Assets/cancel.png" alt="" width="10px" height="10px" class="mt-1 ps-1">
+        </li>
+        <li class="items d-flex ms-3 px-2 border">
+          <p style="font-size: 12px;">Anthropology</p>
+          <img src="./Assets/cancel.png" alt="" width="10px" height="10px" class="mt-1 ps-1">
+        </li>
+        <li class="items d-flex ms-3 px-2 border">
+          <p style="font-size: 12px;">Environmental Science</p>
+          <img src="./Assets/cancel.png" alt="" width="10px" height="10px" class="mt-1 ps-1">
+        </li>
+        <li class="items d-flex ms-3 px-2 ">
+          <p style="font-size: 12px;">Clear all</p>
+
+        </li>
+
+      </ul>
+    </div>
+
+
+  </section>
+
+
+
+  <!-- Explore Mission View  -->
+
+  <div class="row">
+
+    <div class="col-lg-10 my-auto">
+      <p class="mb-0 ps-4 fs-4">Explore <strong>72 missions</strong></p>
+    </div>
+
+    <div class="col-lg-1 d-none d-lg-block">
+      <div class="dropdown">
+        <a class="btn btn-secondary dropdown-toggle text-dark bg-transparent" type="button" id="dropdownMenuButton1"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          Sort By
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#">Newest</a></li>
+          <li><a class="dropdown-item" href="#">Oldest</a></li>
+          <li><a class="dropdown-item" href="#">Lowest available seats</a></li>
+          <li><a class="dropdown-item" href="#">Highest available seats</a></li>
+          <li><a class="dropdown-item" href="#">Sort by my favourite</a></li>
+          <li><a class="dropdown-item" href="#">Sort by deadline</a></li>
+        </ul>
+      </div>
+    </div>
+
+
+    <!-- Grid and List view icon  -->
+
+    <div class="col-lg-1 d-none d-lg-block">
+      <a href="" class="grid rounded-circle btn-grid"><img src="./Assets/grid.png" class="mt-2 ms-1" id="gridimg"
+          alt="Image can't loaded" srcset=""></a>
+      <a href="" class="list rounded-circle btn-list"><img src="./Assets/list.png" class="ms-2 " id="listimg"
+          alt="Image can't loaded" srcset=""></a>
+    </div>
+
+  </div>
+
+
+  <!-- Card start  -->
+
+  <!-- 1st Row  -->
+  <div class="row container-fluid mt-2">
+    <div class="card-group ">
+
+
+      <!-- Card 1 -->
+      <div class="card ms-2 me-2 ">
+        <img src="./Assets/Grow-Trees-On-the-path-to-environment-sustainability.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Grow Trees On the path to <br> environment sustainability</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo praesentium quam, at dolore
+            autem vel?</p>
+        </div>
+
+        <div class="row">
+          <div class="col-6 mt-1">
+            <p class="rateData ms-3">Tree Canada</p>
+          </div>
+          <div class="col-6 d-flex  align-items-center">
+            <img src="./Assets/selected-star.png" class="star" alt="">
+            <img src="./Assets/selected-star.png" class="star" alt="">
+            <img src="./Assets/selected-star.png" class="star" alt="">
+            <img src="./Assets/star.png" class="star" alt="">
+            <img src="./Assets/star.png" class="star" alt="">
+          </div>
+        </div>
+
+
+        <!-- Card 1 footer  -->
+        <div class="card-footer">
+          <div class="row">
+            <div class="col-6">
+              <div class="row">
+                <div class="col-3 mt-1 pe-0 mx-auto">
+                  <img src="./Assets/Seats-left.png" width="25px" height="25px" alt="">
+                </div>
+                <div class="col-lg px-0">
+                  <h5 class="mb-0 mt-1">10</h5>
+                  <p class="mb-0">Seats left</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6">
+              <div class="row">
+                <div class="col-2 mt-1 pe-0 mx-auto">
+                  <img src="./Assets/deadline.png" width="27px" height="27px" alt="">
+
+                </div>
+                <div class="col-lg ms-1 mt-1">
+                  <h5 class="mb-0">09/01/2019</h5>
+                  <p class="mb-0">deadline</p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="card-footer text-center">
+          <button type="button" class="btn btn-outline-warning card-button rounded-pill">Apply <img
+              src="./Assets/right-arrow.png" alt=""></button>
+        </div>
+      </div>
+
+
+      <!-- Card 2 -->
+      <div class="card ms-2 me-2">
+        <img src="./Assets/Education-Supplies-for-Every--Pair-of-Shoes-Sold.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Education Supplies for Every <br> Pair of Shoes Sold</h5>
+          <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto praesentium quos
+            dignissimos omnis, unde iste.</p>
+        </div>
+        <div class="row">
+          <div class="col-6 mt-1">
+            <p class="rateData ms-3">Australian Paradise</p>
+          </div>
+          <div class="col-6 d-flex  align-items-center">
+            <img src="./Assets/selected-star.png" class="star" alt="">
+            <img src="./Assets/selected-star.png" class="star" alt="">
+            <img src="./Assets/selected-star.png" class="star" alt="">
+            <img src="./Assets/star.png" class="star" alt="">
+            <img src="./Assets/star.png" class="star" alt="">
+          </div>
+        </div>
+
+        <!-- Card 2 footer  -->
+
+        <div class="card-footer">
+          <div class="row">
+            <div class="col-6">
+              <div class="row">
+                <div class="col-3 mt-1 pe-0 mx-auto">
+                  <img src="./Assets/Seats-left.png" width="25px" height="25px" alt="">
+                </div>
+                <div class="col-lg px-0">
+                  <h5 class="mb-0 mt-1">10</h5>
+                  <p class="mb-0">Seats left</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6">
+              <div class="row">
+                <div class="col-2 mt-1 pe-0 mx-auto">
+                  <img src="./Assets/deadline.png" width="27px" height="27px" alt="">
+
+                </div>
+                <div class="col-lg ms-1 mt-1">
+                  <h5 class="mb-0">09/01/2019</h5>
+                  <p class="mb-0">deadline</p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-footer text-center">
+          <button type="button" class="btn btn-outline-warning card-button rounded-pill">Apply <img
+              src="./Assets/right-arrow.png" alt=""> </button>
+        </div>
+      </div>
+
+
+      <!-- Card 3 -->
+      <div class="card ms-2 me-2">
+        <img src="./Assets/Nourish-the-Children-in--African-country.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Nourish the Children in African country</h5>
+          <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere sunt, porro deserunt
+            dicta similique eveniet.</p>
+        </div>
+        <div class="row">
+          <div class="col-6 mt-1">
+            <p class="rateData ms-3">The Hunger</p>
+          </div>
+          <div class="col-6 d-flex  align-items-center">
+            <img src="./Assets/selected-star.png" class="star" alt="">
+            <img src="./Assets/selected-star.png" class="star" alt="">
+            <img src="./Assets/selected-star.png" class="star" alt="">
+            <img src="./Assets/star.png" class="star" alt="">
+            <img src="./Assets/star.png" class="star" alt="">
+          </div>
+        </div>
+
+        <!-- card 3 footer  -->
+        <div class="card-footer">
+          <div class="row">
+            <div class="col-6">
+              <div class="row">
+                <div class="col-3 mt-1 pe-0 mx-auto">
+                  <img src="./Assets/Seats-left.png" width="25px" height="25px" alt="">
+                </div>
+                <div class="col-lg px-0">
+                  <h5 class="mb-0 mt-1">10</h5>
+                  <p class="mb-0">Seats left</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6">
+              <div class="row">
+                <div class="col-2 mt-1 pe-0 mx-auto">
+                  <img src="./Assets/deadline.png" width="27px" height="27px" alt="">
+
+                </div>
+                <div class="col-lg ms-1 mt-1">
+                  <h5 class="mb-0">09/01/2019</h5>
+                  <p class="mb-0">deadline</p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer text-center">
+          <button type="button" class="btn btn-outline-warning card-button rounded-pill">Apply <img
+              src="./Assets/right-arrow.png" alt=""></button>
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+  <!-- 2nd Row  -->
+  <div class="row container-fluid mt-5">
+    <div class="card-group ">
+
+
+      <!-- Second row Card 1 -->
+      <div class="card ms-2 me-2 ">
+        <img src="./Assets/CSR-initiative-stands-for-Coffee--and-Farmer-Equity.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">CSR initiative stands for Coffee and Farmer Equity</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo praesentium quam, at dolore
+            autem vel?</p>
+        </div>
+
+        <div class="row">
+          <div class="col-6 mt-1">
+            <p class="rateData ms-3">CSE Network</p>
+          </div>
+          <div class="col-6 d-flex  align-items-center">
+            <img src="./Assets/selected-star.png" class="star" alt="">
+            <img src="./Assets/selected-star.png" class="star" alt="">
+            <img src="./Assets/selected-star.png" class="star" alt="">
+            <img src="./Assets/star.png" class="star" alt="">
+            <img src="./Assets/star.png" class="star" alt="">
+          </div>
+        </div>
+
+
+        <!-- Second row Card 1 footer  -->
+        <div class="card-footer">
+          <div class="row">
+            <div class="col-6">
+              <div class="row">
+                <div class="col-3 mt-1 pe-0 mx-auto">
+                  <img src="./Assets/Seats-left.png" width="25px" height="25px" alt="">
+                </div>
+                <div class="col-lg px-0">
+                  <h5 class="mb-0 mt-1">10</h5>
+                  <p class="mb-0">Seats left</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6">
+              <div class="row">
+                <div class="col-2 mt-1 pe-0 mx-auto">
+                  <img src="./Assets/deadline.png" width="27px" height="27px" alt="">
+
+                </div>
+                <div class="col-lg ms-1 mt-1">
+                  <h5 class="mb-0">09/01/2019</h5>
+                  <p class="mb-0">deadline</p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="card-footer text-center">
+          <button type="button" class="btn btn-outline-warning card-button rounded-pill">Apply <img
+              src="./Assets/right-arrow.png" alt=""></button>
+        </div>
+      </div>
+
+
+      <!--Second row Card 2 -->
+      <div class="card ms-2 me-2">
+        <img src="./Assets/Animal-welfare-&-save-birds-campaign.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Animal welfare & save birds campaign</h5>
+          <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto praesentium quos
+            dignissimos omnis, unde iste.</p>
+        </div>
+        <div class="row">
+          <div class="col-6 mt-1">
+            <p class="rateData ms-3">Australian Paradise</p>
+          </div>
+          <div class="col-6 d-flex  align-items-center">
+            <img src="./Assets/selected-star.png" class="star" alt="">
+            <img src="./Assets/selected-star.png" class="star" alt="">
+            <img src="./Assets/selected-star.png" class="star" alt="">
+            <img src="./Assets/star.png" class="star" alt="">
+            <img src="./Assets/star.png" class="star" alt="">
+          </div>
+        </div>
+
+        <!--Second row Card 2 footer  -->
+
+        <div class="card-footer">
+          <div class="row">
+            <div class="col-6">
+              <div class="row">
+                <div class="col-3 mt-1 pe-0 mx-auto">
+                  <img src="./Assets/Seats-left.png" width="25px" height="25px" alt="">
+                </div>
+                <div class="col-lg px-0">
+                  <h5 class="mb-0 mt-1">10</h5>
+                  <p class="mb-0">Seats left</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6">
+              <div class="row">
+                <div class="col-2 mt-1 pe-0 mx-auto">
+                  <img src="./Assets/deadline.png" width="27px" height="27px" alt="">
+
+                </div>
+                <div class="col-lg ms-1 mt-1">
+                  <h5 class="mb-0">09/01/2019</h5>
+                  <p class="mb-0">deadline</p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-footer text-center">
+          <button type="button" class="btn btn-outline-warning card-button rounded-pill">Apply <img
+              src="./Assets/right-arrow.png" alt=""> </button>
+        </div>
+      </div>
+
+
+      <!--Second row Card 3 -->
+      <div class="card ms-2 me-2">
+        <img src="./Assets/Plantation-and-Afforestation-programme.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Plantation and Afforestation programme</h5>
+          <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere sunt, porro deserunt
+            dicta similique eveniet.</p>
+        </div>
+        <div class="row">
+          <div class="col-6 mt-1">
+            <p class="rateData ms-3">The Hunger</p>
+          </div>
+          <div class="col-6 d-flex  align-items-center">
+            <img src="./Assets/selected-star.png" class="star" alt="">
+            <img src="./Assets/selected-star.png" class="star" alt="">
+            <img src="./Assets/selected-star.png" class="star" alt="">
+            <img src="./Assets/star.png" class="star" alt="">
+            <img src="./Assets/star.png" class="star" alt="">
+          </div>
+        </div>
+
+        <!--Second row Card 3 footer  -->
+        <div class="card-footer">
+          <div class="row">
+            <div class="col-6">
+              <div class="row">
+                <div class="col-3 mt-1 pe-0 mx-auto">
+                  <img src="./Assets/Seats-left.png" width="25px" height="25px" alt="">
+                </div>
+                <div class="col-lg px-0">
+                  <h5 class="mb-0 mt-1">10</h5>
+                  <p class="mb-0">Seats left</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6">
+              <div class="row">
+                <div class="col-2 mt-1 pe-0 mx-auto">
+                  <img src="./Assets/deadline.png" width="27px" height="27px" alt="">
+
+                </div>
+                <div class="col-lg ms-1 mt-1">
+                  <h5 class="mb-0">09/01/2019</h5>
+                  <p class="mb-0">deadline</p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer text-center">
+          <button type="button" class="btn btn-outline-warning card-button rounded-pill">Apply <img
+              src="./Assets/right-arrow.png" alt=""></button>
+        </div>
+      </div>
+
+
+    </div>
+    
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="./JS/LandingPage.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez
+</body>
+
+</html>

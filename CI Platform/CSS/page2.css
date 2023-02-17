@@ -1,0 +1,103 @@
+@media screen and (max-width: 992px) {
+
+    .user-pic,
+    .user-profile {
+      display: none;
+    }
+  }
+  
+  li>p {
+    margin-bottom: 0;
+  }
+  
+  @media screen and (max-width: 992px) {
+    .menu {
+      text-align: center;
+    }
+  }
+  
+  @media screen and (max-width: 406px) {
+    #temp {
+      display: none !important;
+    }
+  }
+  
+  /* @media (max-width: 490px) { 
+        .missionGridList{
+          flex-wrap: wrap;
+        }
+     } */
+  
+  
+  .missionGridList {
+    flex-wrap: wrap;
+  }
+  
+  .filterMission .items {
+    border: 1px solid gray;
+    border-radius: 24px;
+    margin-top: 5px;
+    margin-right: 10px;
+    height: 40px;
+  
+  }
+  
+  .filterMission .items img {
+    height: 15px;
+    width: 15px;
+  }
+  
+  .filterMission .items p {
+    font-size: 14px;
+  }
+  
+  .filterMission {
+    flex-wrap: wrap;
+  }
+  
+  .leftbar {
+    margin-top: 10px;
+  }
+  
+  #missionCount {
+    font-size: 30px;
+    font-family: NotoSans-Regular, ;
+    color: #414141;
+  }
+  
+  .grid{
+        margin-left: 5px;
+      height: 40px;
+      width: 35px;
+      /* background-color: rgb(232, 232, 232); */
+      
+  }
+  .list{
+        margin-left: 5px;
+      height: 40px;
+      width: 35px;
+      /* background-color: rgb(232, 232, 232); */
+  }
+  #gridimg {
+    width: 25px;
+    height: 25px;
+    /* margin-top: 15px; */
+  }
+  
+  #listimg {
+    width: 21px;
+    height: 18px;
+    margin-top: 11px;
+  }
+  
+  .sortItem {
+    border: 1px solid black;
+  }
+  
+  .rateData{
+    font-size: 20px;
+  }
+  
+  
+  
+  

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mission Not Found</title>
+  <link rel="stylesheet" href="./CSS/missionNotFound.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+  <section class="main">
+
+
+    <!-- First navbar  -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <div class="container">
+        <div id="navigation-bar">
+          <button class="navbar-toggler border-0" href="#menubar" role="button" data-bs-toggle="offcanvas"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+            id="navbar-toggler-btn">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="menubar" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <li class="navbar-nav nav-item">
+                <a class="nav-link" aria-current="page" href="#">Stories</a>
+              </li>
+              <li class="navbar-nav nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Privacy
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                  <li><a class="dropdown-item" href="#">Volunteering</a></li>
+                  <li><a class="dropdown-item" href="#">Sponsered</a></li>
+
+                </ul>
+              </li>
+            </div>
+          </div>
+          </ul>
+        </div>
+        <button type="button" class="btn btn-outline-warning card-button rounded-pill mt-2 " id="mission-submit" style="margin-left: 45%;">Submit New mission <img
+            src="./Assets/right-arrow.png" alt="" ></button>
+        <div id="navigation-bar">
+          <ul class="navbar-nav d-flex">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="./Assets/user-img.png" class="rounded-circle" height="35" width="35" alt="Profile pic"
+                  loading="lazy" />
+                Evan Donohue
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                <li><a class="dropdown-item" href="#">Dashboard</a></li>
+                <li><a class="dropdown-item" href="#">My Account</a></li>
+                <li><a class="dropdown-item" href="#">Help Center</a></li>
+                <li><a class="dropdown-item" href="#">LogOut</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <!-- Second Row for Search mission  -->
+    <div class="navbar-expand-md container-fluid border-top border-bottom bg-light px-0">
+      <div class="row container mx-auto px-0">
+        <div class="col-10 col-md-5 py-2">
+          <form class="d-flex mx-5">
+            <img src="./Assets/search.png" id="search-icon" height="20" width="20" class="mt-2">
+            <input class="form-control me-2 border-0 bg-light" type="search" placeholder="Search mission..."
+              aria-label="Search">
+          </form>
+        </div>
+        <button class="col-auto navbar-toggler border-0 text-end" href="#filters" role="button"
+          data-bs-toggle="offcanvas" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation" id="navbar-toggler-btn">
+          <img src="./Assets/filter.png" alt="">
+        </button>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="filters" aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Filters</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <!-- Country Section  -->
+
+            <div class="col-auto py-2 px-2 mx-auto searchByFilter">
+              <ul class="navbar-nav" style="--bs-scroll-height: 100px;">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Country
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                    <li><a class="dropdown-item" href="#">Afghanistan</a></li>
+                    <li><a class="dropdown-item" href="#">Albania</a></li>
+                    <li><a class="dropdown-item" href="#">Algeria</a></li>
+                    <li><a class="dropdown-item" href="#">Barbados</a></li>
+                    <li><a class="dropdown-item" href="#">Belarus</a></li>
+                    <li><a class="dropdown-item" href="#">Belgium</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+            <!-- City Section  -->
+            <div class="col-auto py-2 mx-auto searchByFilter">
+              <ul class="navbar-nav" style="--bs-scroll-height: 100px;">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle ms-1" href="#" id="navbarScrollingDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    City
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                    <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Tirana
+                    </label><br>
+                    <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Durres
+                    </label><br>
+                    <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Vlore
+                    </label><br>
+                    <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Elbasan
+                    </label><br>
+                    <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Shkoder
+                    </label>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Theme Section  -->
+            <div class="col-auto py-2 mx-auto searchByFilter">
+              <ul class="navbar-nav" style="--bs-scroll-height: 100px;">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle ms-1" href="#" id="navbarScrollingDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Theme
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                    <li><a class="dropdown-item" href="#">Theme 1</a></li>
+                    <li><a class="dropdown-item" href="#">Theme 2</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Theme 3</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Skills Section  -->
+            <div class="col-auto py-2 mx-auto searchByFilter">
+              <ul class="navbar-nav" style="--bs-scroll-height: 100px;">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle ms-1" href="#" id="navbarScrollingDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Skills
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                    <li><a class="dropdown-item" href="#">Skill 1</a></li>
+                    <li><a class="dropdown-item" href="#">Skill 2</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Skill 3</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="text-center mt-5">
+      <h5 style="font-family: NotoSans-Light,;">No Misson Found</h5>
+      <button type="button" class="btn btn-outline-warning card-button rounded-pill mt-2">Submit New mission <img
+          src="./Assets/right-arrow.png" alt=""></button>
+    </div>
+
+
+
+
+
+
+
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="./JS/LandingPage.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez
+</body>
+</html>

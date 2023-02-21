@@ -1,26 +1,22 @@
-// Javascript for Grid and List View button 
+let items = document.querySelectorAll('.carousel .carousel-item')
 
-function showList(e) {
-    var $gridCont = $('.grid-container');
-    e.preventDefault();
-    $gridCont.hasClass('list-view') ? $gridCont.removeClass('list-view') : $gridCont.addClass('list-view');
-  }
-  function gridList(e) {
-    var $gridCont = $('.grid-container')
-    e.preventDefault();
-    $gridCont.removeClass('list-view');
-  }
-  
-  $(document).on('click', '.btn-grid', gridList);
-  $(document).on('click', '.btn-list', showList);
-
-
+        items.forEach((el) => {
+            const minPerSlide = 4
+            let next = el.nextElementSibling
+            for (var i = 1; i < minPerSlide; i++) {
+                if (!next) {
+                    // wrap carousel by using first child
+                    next = items[0]
+                }
+                let cloneChild = next.cloneNode(true)
+                el.appendChild(cloneChild.children[0])
+                next = next.nextElementSibling
+            }
+        })
 
 
 
-
-
-
+// Below Javascript is for third row to show selected city and details 
 
 var checkboxes = document.querySelectorAll(".checkbox");
 
@@ -96,3 +92,8 @@ function removeElement(value) {
     filtersSection.removeChild(elementToBeRemoved);
 
 }
+
+
+
+
+

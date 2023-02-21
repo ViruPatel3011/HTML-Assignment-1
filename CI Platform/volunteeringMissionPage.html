@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/volunteeringMissionPage.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <title>Volunteering Page</title>
+</head>
+
+<body>
+
+
+    <section class="main">
+        <!-- First navbar  -->
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <div class="container">
+                <div id="navigation-bar">
+                    <button class="navbar-toggler border-0" href="#menubar" role="button" data-bs-toggle="offcanvas"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                        id="navbar-toggler-btn">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="menubar"
+                        aria-labelledby="offcanvasExampleLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <li class="navbar-nav nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Stories</a>
+                            </li>
+                            <li class="navbar-nav nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Privacy
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                    <li><a class="dropdown-item" href="#">Volunteering</a></li>
+                                    <li><a class="dropdown-item" href="#">Sponsered</a></li>
+
+                                </ul>
+                            </li>
+                        </div>
+                    </div>
+                    </ul>
+                </div>
+                <div id="navigation-bar">
+                    <ul class="navbar-nav d-flex">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="./Assets/user-img.png" class="rounded-circle" height="35" width="35"
+                                    alt="Profile pic" loading="lazy" />
+                                Evan Donohue
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                <li><a class="dropdown-item" href="#">Dashboard</a></li>
+                                <li><a class="dropdown-item" href="#">My Account</a></li>
+                                <li><a class="dropdown-item" href="#">Help Center</a></li>
+                                <li><a class="dropdown-item" href="#">LogOut</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Second Row for Search mission  -->
+        <div class="navbar-expand-md container-fluid border-top border-bottom bg-light px-0">
+            <div class="row container mx-auto px-0">
+                <div class="col-10 col-md-5 py-2">
+                    <form class="d-flex mx-5">
+                        <img src="./Assets/search.png" id="search-icon" height="20" width="20" class="mt-2">
+                        <input class="form-control me-2 border-0 bg-light" type="search" placeholder="Search mission..."
+                            aria-label="Search">
+                    </form>
+                </div>
+                <button class="col-auto navbar-toggler border-0 text-end" href="#filters" role="button"
+                    data-bs-toggle="offcanvas" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation" id="navbar-toggler-btn">
+                    <img src="./Assets/filter.png" alt="">
+                </button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="filters"
+                    aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Filters</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+
+
+                        <!-- Country Section  -->
+                        <div class="col-auto py-2 px-2 mx-auto searchByFilter">
+                            <ul class="navbar-nav" style="--bs-scroll-height: 100px;">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Country
+                                    </a>
+                                    <ul class="dropdown-menu scrollable-menu" aria-labelledby="navbarScrollingDropdown">
+                                        <li><a class="dropdown-item" href="#">Afghanistan</a></li>
+                                        <li><a class="dropdown-item" href="#">Albania</a></li>
+                                        <li><a class="dropdown-item" href="#">Algeria</a></li>
+                                        <li><a class="dropdown-item" href="#">Barbados</a></li>
+                                        <li><a class="dropdown-item" href="#">Belarus</a></li>
+                                        <li><a class="dropdown-item" href="#">Belgium</a></li>
+                                        <li><a class="dropdown-item" href="#">Belgium</a></li>
+                                        <li><a class="dropdown-item" href="#">Belgium</a></li>
+                                        <li><a class="dropdown-item" href="#">Belgium</a></li>
+                                        <li><a class="dropdown-item" href="#">Belgium</a></li>
+                                        <li><a class="dropdown-item" href="#">Belgium</a></li>
+                                        <li><a class="dropdown-item" href="#">Belgium</a></li>
+                                        <li><a class="dropdown-item" href="#">Belgium</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- City Section  -->
+                        <div class="col-auto py-2 px-2 mx-auto searchByFilter">
+                            <ul class="navbar-nav" style="--bs-scroll-height: 100px;">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        City
+                                    </a>
+                                    <ul class="dropdown-menu scrollable-menu" aria-labelledby="navbarScrollingDropdown">
+                                        <input class="form-check-input checkbox ms-2" type="checkbox"
+                                            value="Afghanistan" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Afghanistan
+                                        </label> <br>
+                                        <input class="form-check-input checkbox ms-2" type="checkbox" value="Albania"
+                                            id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Albania
+                                        </label> <br>
+                                        <input class="form-check-input checkbox ms-2" type="checkbox" value="Algeria"
+                                            id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Algeria
+                                        </label> <br>
+                                        <input class="form-check-input checkbox ms-2" type="checkbox" value="Barbados"
+                                            id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Barbados
+                                        </label> <br>
+                                        <input class="form-check-input checkbox ms-2" type="checkbox" value="Belarus"
+                                            id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Belarus
+                                        </label> <br>
+                                        <input class="form-check-input checkbox ms-2" type="checkbox" value="Belgium"
+                                            id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Belgium
+                                        </label> <br>
+                                        <input class="form-check-input checkbox ms-2" type="checkbox" value="New York"
+                                            id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            New York
+                                        </label> <br>
+                                        <input class="form-check-input checkbox ms-2" type="checkbox" value="India"
+                                            id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            India
+                                        </label> <br>
+                                        <input class="form-check-input checkbox ms-2" type="checkbox" value="London"
+                                            id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            London
+                                        </label> <br>
+                                        <input class="form-check-input checkbox ms-2" type="checkbox" value="USA"
+                                            id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            USA
+                                        </label>
+
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Theme Section  -->
+                        <div class="col-auto py-2 px-2 mx-auto searchByFilter">
+                            <ul class="navbar-nav" style="--bs-scroll-height: 100px;">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Theme
+                                    </a>
+                                    <ul class="dropdown-menu scrollable-menu" aria-labelledby="navbarScrollingDropdown">
+                                        <input class="form-check-input checkbox ms-2" type="checkbox" value="Theme1"
+                                            id="flexCheckDefault">
+                                        <label class="form-check-label " for="flexCheckDefault">
+                                            Theme1
+                                        </label> <br>
+                                        <input class="form-check-input checkbox ms-2" type="checkbox" value="Theme2"
+                                            id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Theme2
+                                        </label> <br>
+                                        <input class="form-check-input checkbox ms-2" type="checkbox" value="Theme3"
+                                            id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Theme3
+                                        </label> <br>
+                                        <input class="form-check-input checkbox ms-2" type="checkbox" value="Theme4"
+                                            id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Theme4
+                                        </label> <br>
+                                        <input class="form-check-input checkbox ms-2" type="checkbox" value="Theme5"
+                                            id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Theme5
+                                        </label> <br>
+                                        <input class="form-check-input checkbox ms-2" type="checkbox" value="Theme6"
+                                            id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Theme6
+                                        </label> <br>
+                                        <input class="form-check-input checkbox ms-2" type="checkbox" value="Theme7"
+                                            id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Theme7
+                                        </label> <br>
+                                        <input class="form-check-input checkbox ms-2" type="checkbox" value="Theme8"
+                                            id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Theme8
+                                        </label> <br>
+                                        <input class="form-check-input checkbox ms-2" type="checkbox" value="Theme9"
+                                            id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Theme9
+                                        </label> <br>
+                                        <input class="form-check-input checkbox ms-2" type="checkbox" value="Theme10"
+                                            id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Theme10
+                                        </label>
+
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Skills Section  -->
+                        <div class="col-auto py-2 px-2 mx-auto searchByFilter">
+                            <ul class="navbar-nav" style="--bs-scroll-height: 100px;">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Skills
+                                    </a>
+                                    <ul class="dropdown-menu scrollable-menu" aria-labelledby="navbarScrollingDropdown">
+                                        <input class="form-check-input checkbox ms-2" type="checkbox" value="Skills1"
+                                            id="flexCheckDefault">
+                                        <label class="form-check-label " for="flexCheckDefault">
+                                            Skills1
+                                        </label> <br>
+                                        <input class="form-check-input checkbox ms-2" type="checkbox" value="Skills2"
+                                            id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Skills2
+                                        </label> <br>
+                                        <input class="form-check-input checkbox ms-2" type="checkbox" value="Skills3"
+                                            id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Skills3
+                                        </label> <br>
+                                        <input class="form-check-input checkbox ms-2" type="checkbox" value="Skills4"
+                                            id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Skills4
+                                        </label> <br>
+                                        <input class="form-check-input checkbox ms-2" type="checkbox" value="Theme5"
+                                            id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Skills5
+                                        </label> <br>
+                                        <input class="form-check-input checkbox ms-2" type="checkbox" value="Skills6"
+                                            id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Skills6
+                                        </label> <br>
+                                        <input class="form-check-input checkbox ms-2" type="checkbox" value="Skills7"
+                                            id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Skills7
+                                        </label> <br>
+                                        <input class="form-check-input checkbox ms-2" type="checkbox" value="Skills8"
+                                            id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Skills8
+                                        </label> <br>
+                                        <input class="form-check-input checkbox ms-2" type="checkbox" value="Skills9"
+                                            id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Skills9
+                                        </label> <br>
+                                        <input class="form-check-input checkbox ms-2" type="checkbox" value="Skills10"
+                                            id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Skills10
+                                        </label>
+
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Filter Mission  -->
+
+        <div class="filters-section d-flex align-items-center flex-wrap justify-content-start mb-3"
+            style="padding-left: 130px ;">
+        </div>
+    </section>
+
+
+
+    <div class="container">
+        <div class="row">
+
+            <!-- col-6 for Image left part  -->
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <img src="./Assets/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-4.png" alt="" srcset="" style="height: 70%
+                ; width: 100%;">
+
+
+                <!-- Carousel Part  -->
+                <div class="container text-center my-3">
+
+                    <div class="row mx-auto my-auto justify-content-center">
+                        <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner" role="listbox">
+
+                                <!-- Slide 1 -->
+                                <div class="carousel-item active">
+                                    <div class="col-3">
+                                        <div class="card">
+                                            <div class="card-img">
+                                                <img src="./Assets/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-5.png"
+                                                    class="img-fluid">
+                                            </div>
+                                            <div class="card-img-overlay">Slide 1</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Slide 2 -->
+                                <div class="carousel-item">
+                                    <div class="col-3">
+                                        <div class="card">
+                                            <div class="card-img">
+                                                <img src="./Assets/img2.png" class="img-fluid">
+                                            </div>
+                                            <div class="card-img-overlay">Slide 2</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Slide 3 -->
+                                <div class="carousel-item">
+                                    <div class="col-3">
+                                        <div class="card">
+                                            <div class="card-img">
+                                                <img src="./Assets/Grow-Trees-On-the-path-to-environment-sustainability-4.png"
+                                                    class="img-fluid">
+                                            </div>
+                                            <div class="card-img-overlay">Slide 3</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Slide 4 -->
+                                <div class="carousel-item">
+                                    <div class="col-3">
+                                        <div class="card">
+                                            <div class="card-img">
+                                                <img src="./Assets/img22.png" class="img-fluid">
+                                            </div>
+                                            <div class="card-img-overlay">Slide 4</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Slide 5 -->
+                                <div class="carousel-item">
+                                    <div class="col-3">
+                                        <div class="card">
+                                            <div class="card-img">
+                                                <img src="./Assets/img.png" class="img-fluid">
+                                            </div>
+                                            <div class="card-img-overlay">Slide 5</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Slide 6 -->
+                                <div class="carousel-item">
+                                    <div class="col-3">
+                                        <div class="card">
+                                            <div class="card-img">
+                                                <img src="./Assets/image.png" class="img-fluid">
+                                            </div>
+                                            <div class="card-img-overlay">Slide 6</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            </a>
+                            <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- col-6 for right side details  -->
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <h3 class="mt-5">CSR-initiative stands for Coffee & <br> Farmer Equity</h3>
+                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur expedita saepe eligendi
+                    facilis, velit quibusdam dolor tenetur temporibus natus maiores.</p>
+
+
+
+                <!-- Plant Tress row -->
+                <div class="d-flex justify-content-between position-relative border-top border-bottom py-4">
+                    <div class="text-center position-absolute" id="mission-deadline">
+                        <p style="border: 1px solid gray;border-radius: 20px;" class="ps-1 pe-1">Plant 10,000 Trees
+                        </p>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <div class=" mt-1 me-2 mx-auto">
+                            <img src="./Assets/Seats-left.png" width="25px" height="25px" alt="">
+                        </div>
+                        <div class=" px-0">
+                            <h5 class="mb-0 mt-1">10</h5>
+                            <p class="mb-0">Seats left</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <div class=" mt-1 me-2 mx-auto">
+                            <img src="./Assets/achieved.png" width="25px" height="25px" alt="">
+                        </div>
+                        <div class=" px-0">
+                            <div class="progress">
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: 75%"
+                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p class="mb-0">8000 achieved</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Add to favourite button  -->
+                <div class="row mt-2">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <button type="button" class="btn  card-button rounded-pill mt-2" style="border: 2px
+                        solid black; width: 100%;"><img src="./Assets/heart1.png" alt="" class="me-2">Add to Favourite
+                        </button>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12"><button type="button"
+                            class="btn  card-button rounded-pill mt-2" style="border: 2px
+                             solid black; width: 100%;"> <img src="./Assets/add1.png" class="me-2" alt="">Recommended
+                            to a co-Worker</button></div>
+                </div>
+
+
+                <!-- div for rated star  -->
+                <div class="d-flex text-center justify-content-center mt-3">
+                    <img src="./Assets/star-empty.png" alt="" srcset="">
+                    <img src="./Assets/star-empty.png" alt="" srcset="">
+                    <img src="./Assets/star-empty.png" alt="" srcset="">
+                    <img src="./Assets/star-empty.png" alt="" srcset="">
+                    <img src="./Assets/star-empty.png" alt="" srcset="">
+                </div>
+
+
+                <!-- div for boxes  -->
+                <div class="row justify-content-center mt-4">
+                    <div class="col-lg-2 col-md-2 col-sm-6  me-2 box" style="width:21%;">
+                        <img src="./Assets/pin1.png" alt="" srcset="" class="mt-2">
+                        <p class="mb-0 mt-5">City</p>
+                        <p class="mb-0 fw-bold">London</p>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-6  me-2 box" style="width:21%;">
+                        <img src="./Assets/web.png" alt="" srcset="" class="mt-2">
+                        <p class="mb-0 mt-5">Theme</p>
+                        <p class="mb-0 fw-bold">Environment</p>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-6  me-2 box" style="width:21%;">
+                        <img src="./Assets/calender.png" alt="" srcset="" class="mt-2">
+                        <p class="mb-0 mt-4">Date</p>
+                        <p class="mb-0 fw-bold">Ongoing Opportunity</p>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-6   me-2 box" style="width:21%;">
+                        <img src="./Assets/organization.png" alt="" srcset="" class="mt-2">
+                        <p class="mb-0 mt-5">Organization</p>
+                        <p class="mb-0 fw-bold">CSE Network</p>
+                    </div>
+                </div>
+
+
+                <!-- Footer Button  -->
+                <div class="card-footer text-center">
+                    <button type="button" class="btn btn-outline-warning card-button rounded-pill mt-2"
+                        style="width: 30%;">Apply Now <img src="./Assets/right-arrow.png" alt="" class="ms-2"></button>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Row for Tab and Information  -->
+
+        <div class="row mt-5">
+            <div class="col-lg-7 ms-5 border border-2  ml-auto">
+                <ul class="nav nav-tabs mb-3" id="myTab0" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="home-tab0" data-bs-toggle="tab" data-bs-target="#home0"
+                            type="button" role="tab" aria-controls="home" aria-selected="true">
+                            Mission
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="profile-tab0" data-bs-toggle="tab" data-bs-target="#profile0"
+                            type="button" role="tab" aria-controls="profile" aria-selected="false">
+                            Organization
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="contact-tab0" data-bs-toggle="tab" data-bs-target="#contact0"
+                            type="button" role="tab" aria-controls="contact" aria-selected="false">
+                            Comments
+                        </button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent0">
+
+                    <!-- Mission tab  -->
+                    <div class="tab-pane fade show active" id="home0" role="tabpanel" aria-labelledby="home-tab0">
+
+
+                        <!-- First Para of Mission Tab  -->
+                        <h3>Introduction</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, perspiciatis a sunt, nam
+                            ipsam, aperiam hic deleniti perferendis pariatur blanditiis voluptas culpa illum adipisci
+                            dolor!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius sequi velit nemo eos quia nisi
+                            consectetur aut!</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, ipsam numquam laudantium
+                            illum voluptates facere dolor delectus dolorum quia perspiciatis quisquam vel rem laboriosam
+                            id velit laborum nemo! Provident, quo nulla alias sunt dignissimos eligendi laboriosam
+                            repellat! Ratione, suscipit iusto.</p>
+
+
+                        <!-- Second Para of Mission Tab -->
+                        <h3>Challange</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum et commodi vel? Provident
+                            ipsa aliquam perspiciatis aut amet at labore nisi beatae error, totam, magnam esse
+                            voluptatum repellat quidem alias! Quidem neque repellendus distinctio et aspernatur quis
+                            nostrum exercitationem temporibus. Asperiores porro doloremque debitis fugit?</p>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit quam quae autem illo
+                            asperiores qui laboriosam explicabo voluptatem dolorem vero unde eum mollitia amet debitis,
+                            totam tempora eius ex illum!</p>
+
+                        <!-- Third Para of Mission Tab -->
+                        <h3>Documents</h3>
+                        <div class="files d-flex flex-wrap">
+
+                            <button class="d-flex bg-light file mb-3 me-2" type="" style="border-radius: 20px;">
+                                <img src="./Assets/pdf.png" alt="" srcset="" class="img-fluid pt-2 ps-3">
+                                <p class="pt-2 ps-2 pb-0">lorem-epsum.pdf</p>
+                            </button>
+                            <button class="d-flex bg-light file mb-3 me-2" type="" style="border-radius: 20px;">
+                                <img src="./Assets/pdf.png" alt="" srcset="" class="img-fluid pt-2 ps-3">
+                                <p class="pt-2 ps-2 pb-0">at_vero_eos_accusamuc.doc</p>
+                            </button>
+                            <button class="d-flex bg-light file mb-3 me-2" type="" style="border-radius: 20px;">
+                                <img src="./Assets/pdf.png" alt="" srcset="" class="img-fluid pt-2 ps-3">
+                                <p class="pt-2 ps-2 pb-0">important_doc.xls</p>
+                            </button>
+                        </div>
+                    </div>
+
+
+                    <!-- Organization Tab  -->
+                    <div class="tab-pane fade" id="profile0" role="tabpanel" aria-labelledby="profile-tab0">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates ratione perferendis illum
+                        rerum ea doloremque maiores, consectetur quaerat, soluta, tempore qui! Accusantium, maxime
+                        molestiae officia eius voluptatem quisquam animi? Placeat?
+                    </div>
+
+                    <!-- Comments tab  -->
+                    <div class="tab-pane fade" id="contact0" role="tabpanel" aria-labelledby="contact-tab0">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque perferendis eaque minima
+                        excepturi in? Labore quam quos neque. Nostrum corrupti alias quasi obcaecati voluptate eligendi
+                        magni qui amet maxime odio.
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4 ms-4">
+
+
+                <!-- Information class start here  -->
+                <div class="information">
+                    <!-- Tabs navs -->
+                    <ul class="nav nav-tabs mb-3" id="ex1" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" id="ex1-tab-1" data-bs-toggle="tab" href="#ex1-tabs-1" role="tab"
+                                aria-controls="ex1-tabs-1" aria-selected="true">Information</a>
+                        </li>
+
+                    </ul>
+                    <!-- Tabs navs -->
+
+                    <!-- Tabs content -->
+                    <div class="tab-content" id="ex1-content">
+                        <div class="tab-pane fade show active" id="ex1-tabs-1" role="tabpanel"
+                            aria-labelledby="ex1-tab-1">
+                            <div class="skills d-flex">
+                                <p class="mb-0 me-2 ms-2">Skills</p>
+                                <p class="mb-0 ms-5">Cool,Easy Going,Math,Computer</p>
+                            </div>
+                            <hr>
+                            <div class="Days d-flex">
+                                <p class="mb-0 me-2 ms-2">Days</p>
+                                <p class="mb-0 ms-5">Weekends Only</p>
+                            </div>
+                            <hr>
+                            <div class="Rating d-flex">
+                                <p class="mb-0 me-2 ms-2">Rating</p>
+                                <div class="star d-flex ms-5" style="width:65%">
+                                    <img src="./Assets/selected-star.png" alt="" srcset="">
+                                    <img src="./Assets/selected-star.png" alt="" srcset="">
+                                    <img src="./Assets/selected-star.png" alt="" srcset="">
+                                    <img src="./Assets/selected-star.png" alt="" srcset="">
+                                    <img src="./Assets/selected-star.png" alt="" srcset="">
+                                    <small class="ms-1">(by 125 volunteer)</small>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+
+                    </div>
+                    <!-- Tabs content -->
+                </div>
+
+
+                <!-- Volunteer class start here  -->
+                <div class="volunteer">
+                    <!-- Tabs navs -->
+                    <ul class="nav nav-tabs mb-3" id="ex1" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" id="ex1-tab-1" data-bs-toggle="tab" href="#ex1-tabs-1" role="tab"
+                                aria-controls="ex1-tabs-1" aria-selected="true">Recent Volunteers</a>
+                        </li>
+
+                    </ul>
+                    <!-- Tabs navs -->
+
+                    <!-- Tabs content -->
+                    <div class="tab-content" id="ex1-content">
+                        <div class="tab-pane fade show active" id="ex1-tabs-1" role="tabpanel"
+                            aria-labelledby="ex1-tab-1">
+
+                            <!-- First Row of Volunteers  -->
+                            <div class="first-row d-flex justify-content-between ">
+                                <div class="img1 ">
+                                    <img src="./Assets/volunteer1.png" alt="" srcset=""
+                                        class="img-fluid rounded-circle ">
+                                    <p style="font-size: 14px;">charles <br> vigue</p>
+                                </div>
+                                <div class="img2 ">
+                                    <img src="./Assets/volunteer2.png" alt="" srcset=""
+                                        class="img-fluid rounded-circle ">
+                                    <p>Andrew <br> Johnson</p>
+                                </div>
+                                <div class="img3 ">
+                                    <img src="./Assets/volunteer3.png" alt="" srcset=""
+                                        class="img-fluid rounded-circle ">
+                                    <p>Andrew <br> Johnson</p>
+                                </div>
+                            </div>
+
+                            <!-- Second Row of Volunteers  -->
+                            <div class="second-row d-flex justify-content-between">
+                                <div class="img1 ">
+                                    <img src="./Assets/volunteer4.png" alt="" srcset=""
+                                        class="img-fluid rounded-circle ">
+                                    <p style="font-size: 14px;">charles <br> vigue</p>
+                                </div>
+                                <div class="img2 ">
+                                    <img src="./Assets/volunteer5.png" alt="" srcset=""
+                                        class="img-fluid rounded-circle ">
+                                    <p>Andrew <br> Johnson</p>
+                                </div>
+                                <div class="img3 ">
+                                    <img src="./Assets/volunteer6.png" alt="" srcset=""
+                                        class="img-fluid rounded-circle ">
+                                    <p>Andrew <br> Johnson</p>
+                                </div>
+                            </div>
+
+                            <!-- Third Row of Volunteers  -->
+                            <div class="third-row d-flex justify-content-between">
+                                <div class="img1 ">
+                                    <img src="./Assets/volunteer7.png" alt="" srcset=""
+                                        class="img-fluid rounded-circle ">
+                                    <p style="font-size: 14px;">charles <br> vigue</p>
+                                </div>
+                                <div class="img2 ">
+                                    <img src="./Assets/volunteer8.png" alt="" srcset=""
+                                        class="img-fluid rounded-circle ">
+                                    <p>Andrew <br> Johnson</p>
+                                </div>
+                                <div class="img3 ">
+                                    <img src="./Assets/volunteer9.png" alt="" srcset=""
+                                        class="img-fluid rounded-circle ">
+                                    <p>Andrew <br> Johnson</p>
+                                </div>
+                            </div>
+
+                            
+                        </div>
+
+                    </div>
+                    <!-- Tabs content -->
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Container for Related Cards  -->
+    <div class="container grid-container">
+        <div class="row mt-5">
+
+            <h3 class="text-center mb-3">Related Missions</h3>
+            <!-- Card 4 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+
+                    <!-- Card 4 Upper body -->
+                    <div class="position-relative">
+                        <img src="./Assets/CSR-initiative-stands-for-Coffee--and-Farmer-Equity.png" class="card-img-top"
+                            alt="...">
+
+                        <div class="position-absolute c1-location px-2 py-1">
+                            <img src="./Assets/pin.png" alt="">
+                            London
+                        </div>
+                        <div class="position-absolute c1-heart px-2 py-1">
+                            <img src="./Assets/heart.png" alt="">
+                        </div>
+                        <div class="position-absolute c1-person px-2 py-1">
+                            <img src="./Assets/user.png" alt="">
+                        </div>
+                        <div class="text-center position-absolute" id="mission-theme">
+                            <p class="ps-1 pe-1" style="border-radius: 20px; background-color: white;">Environment
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <!-- Card 4 body-->
+                    <div class="card-body">
+                        <h5 class="card-title">CSR initiative stands for Coffee <br> and Farmer Equity</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo praesentium
+                            quam, at
+                            dolore
+                            autem vel?</p>
+                        <div class="d-flex justify-content-between mb-3">
+
+                            <div class="mt-1">
+                                <p class="rateData ms-3 mb-0">CSE network</p>
+                            </div>
+
+                            <div class="d-flex  align-items-center">
+                                <img src="./Assets/selected-star.png" class="star" alt="">
+                                <img src="./Assets/selected-star.png" class="star" alt="">
+                                <img src="./Assets/selected-star.png" class="star" alt="">
+                                <img src="./Assets/star.png" class="star" alt="">
+                                <img src="./Assets/star.png" class="star" alt="">
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between position-relative border-top border-bottom py-4">
+                            <div class="text-center position-absolute" id="mission-deadline">
+                                <p style="border: 1px solid gray;border-radius: 20px;" class="ps-1 pe-1">Ongoing
+                                    Opportunity
+                                </p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <div class=" mt-1 me-2 mx-auto">
+                                    <img src="./Assets/Already-volunteered.png" width="25px" height="25px" alt="">
+                                </div>
+                                <div class=" px-0">
+                                    <h5 class="mb-0 mt-1">250</h5>
+                                    <p class="mb-0">Already volunteered</p>
+                                </div>
+                            </div>
+                            <!-- <div class="d-flex align-items-center">
+                    <div class=" mt-1 me-2 mx-auto">
+                      <img src="./Assets/Seats-left.png" width="25px" height="25px" alt="">
+                    </div>
+                    <div class=" px-0">
+                      <h5 class="mb-0 mt-1">10</h5>
+                      <p class="mb-0">Seats left</p>
+                    </div>
+                  </div> -->
+
+                        </div>
+
+                        <!-- Card 4 Button-->
+                        <div class="card-footer text-center">
+                            <button type="button" class="btn btn-outline-warning card-button rounded-pill">Apply <img
+                                    src="./Assets/right-arrow.png" alt=""></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Card 5 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+
+                    <!-- Card 5 Upper Body  -->
+                    <div class="position-relative">
+                        <img src="./Assets/Animal-welfare-&-save-birds-campaign.png" class="card-img-top" alt="...">
+
+                        <div class="position-absolute c1-location px-2 py-1">
+                            <img src="./Assets/pin.png" alt="">
+                            Cape Town
+                        </div>
+                        <div class="position-absolute c1-heart px-2 py-1">
+                            <img src="./Assets/heart.png" alt="">
+                        </div>
+                        <div class="position-absolute c1-person px-2 py-1">
+                            <img src="./Assets/user.png" alt="">
+                        </div>
+                        <div class="text-center position-absolute" id="mission-theme">
+                            <p class="ps-1 pe-1" style="border-radius: 20px; background-color: white;">Animals
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <!-- Card 5 Body-->
+                    <div class="card-body">
+                        <h5 class="card-title">Animal welfare & save birds <br> campaign</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo praesentium
+                            quam, at
+                            dolore
+                            autem vel?</p>
+                        <div class="d-flex justify-content-between mb-3">
+
+                            <div class="mt-1">
+                                <p class="rateData ms-3 mb-0">JR Foundation</p>
+                            </div>
+
+                            <div class="d-flex  align-items-center">
+                                <img src="./Assets/selected-star.png" class="star" alt="">
+                                <img src="./Assets/selected-star.png" class="star" alt="">
+                                <img src="./Assets/selected-star.png" class="star" alt="">
+                                <img src="./Assets/star.png" class="star" alt="">
+                                <img src="./Assets/star.png" class="star" alt="">
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between position-relative border-top border-bottom py-4">
+                            <div class="text-center position-absolute" id="mission-deadline">
+                                <p style="border: 1px solid gray;border-radius: 20px;" class="ps-1 pe-1">Plant 10,000
+                                    Trees
+                                </p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <div class=" mt-1 me-2 mx-auto">
+                                    <img src="./Assets/Seats-left.png" width="25px" height="25px" alt="">
+                                </div>
+                                <div class=" px-0">
+                                    <h5 class="mb-0 mt-1">10</h5>
+                                    <p class="mb-0">Seats left</p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <div class=" mt-1 me-2 mx-auto">
+                                    <img src="./Assets/achieved.png" width="25px" height="25px" alt="">
+                                </div>
+                                <div class=" px-0">
+                                    <div class="progress">
+                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 75%"
+                                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <p class="mb-0">8000 achieved</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Card 2 Button-->
+                        <div class="card-footer text-center">
+                            <button type="button" class="btn btn-outline-warning card-button rounded-pill">Apply <img
+                                    src="./Assets/right-arrow.png" alt=""></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Card 6 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+
+                    <!-- Card 6 Upper Body-->
+                    <div class="position-relative">
+                        <img src="./Assets/Plantation-and-Afforestation-programme.png" class="card-img-top" alt="...">
+
+                        <div class="position-absolute c1-location px-2 py-1">
+                            <img src="./Assets/pin.png" alt="">
+                            Paris
+                        </div>
+                        <div class="position-absolute c1-heart px-2 py-1">
+                            <img src="./Assets/heart.png" alt="">
+                        </div>
+                        <div class="position-absolute c1-person px-2 py-1">
+                            <img src="./Assets/user.png" alt="">
+                        </div>
+                        <div class="text-center position-absolute" id="mission-theme">
+                            <p class="ps-1 pe-1" style="border-radius: 20px; background-color: white;">Environment
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 6 Body-->
+                    <div class="card-body">
+                        <h5 class="card-title">Plantation and Afforestation <br> programme</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo praesentium
+                            quam, at
+                            dolore
+                            autem vel?</p>
+                        <div class="d-flex justify-content-between mb-3">
+
+                            <div class="mt-1">
+                                <p class="rateData ms-3 mb-0">Amaze Doctors</p>
+                            </div>
+
+                            <div class="d-flex  align-items-center">
+                                <img src="./Assets/selected-star.png" class="star" alt="">
+                                <img src="./Assets/selected-star.png" class="star" alt="">
+                                <img src="./Assets/selected-star.png" class="star" alt="">
+                                <img src="./Assets/star.png" class="star" alt="">
+                                <img src="./Assets/star.png" class="star" alt="">
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between position-relative border-top border-bottom py-4">
+                            <div class="text-center position-absolute " id="mission-deadline">
+                                <p style="border: 1px solid gray;border-radius: 20px;" class="ps-1 pe-1">Plant 10,000
+                                    Trees
+                                </p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <div class=" mt-1 me-2 mx-auto">
+                                    <img src="./Assets/achieved.png" width="25px" height="25px" alt="">
+                                </div>
+                                <div class=" px-0">
+                                    <div class="progress">
+                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 75%"
+                                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <p class="mb-0">8000 achieved</p>
+                                </div>
+                            </div>
+                            <!-- <div class="d-flex align-items-center">
+                    <div class=" mt-1 me-2 mx-auto">
+                      <img src="./Assets/Seats-left.png" width="25px" height="25px" alt="">
+                    </div>
+                    <div class=" px-0">
+                      <h5 class="mb-0 mt-1">10</h5>
+                      <p class="mb-0">Seats left</p>
+                    </div>
+                  </div> -->
+                        </div>
+
+                        <!-- Card 6 Button-->
+                        <div class="card-footer text-center">
+                            <button type="button" class="btn btn-outline-warning card-button rounded-pill">Apply <img
+                                    src="./Assets/right-arrow.png" alt=""></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="./JS/volunteeringMissionPage.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

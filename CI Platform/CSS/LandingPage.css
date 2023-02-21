@@ -204,7 +204,7 @@ li>p {
   display: inline-block;
 }
 
-/* inside card location,person,heart  */
+/* inside card location,person,heart start */
 
 .c1-location {
   /* position: absolute; */
@@ -256,9 +256,10 @@ li>p {
 }
 
 
+/* inside card location,person,heart  */
 
 
-/* Footer CSS  */
+/* Footer CSS  start */
 
 .copyright {
   padding: 28px 0;
@@ -297,3 +298,33 @@ li>p {
 /* Footer css end  */
 
 
+
+
+
+
+
+
+/* Filter Button CSS start  */
+
+.filter-list {
+  /* padding:6px 10px;  */
+  background-color: white;
+  border: 1px solid #808080;
+  border-radius: 20px;
+  color: #000;
+  cursor: pointer;
+}
+
+.filter-close-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  margin-left: 5px;
+  color: #888;
+}
+.filters-section{
+  margin-top:2%;
+}
+
+/* Filter Button CSS end */

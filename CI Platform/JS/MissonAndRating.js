@@ -1,23 +1,21 @@
-let items = document.querySelectorAll('.carousel .carousel-item')
-
-        items.forEach((el) => {
-            const minPerSlide = 4
-            let next = el.nextElementSibling
-            for (var i = 1; i < minPerSlide; i++) {
-                if (!next) {
-                    // wrap carousel by using first child
-                    next = items[0]
-                }
-                let cloneChild = next.cloneNode(true)
-                el.appendChild(cloneChild.children[0])
-                next = next.nextElementSibling
-            }
-        })
 
 
+function showList(e) {
+    var $gridCont = $('.grid-container');
+    e.preventDefault();
+    $gridCont.hasClass('list-view') ? $gridCont.removeClass('list-view') : $gridCont.addClass('list-view');
+  }
+  function gridList(e) {
+    var $gridCont = $('.grid-container')
+    e.preventDefault();
+    $gridCont.removeClass('list-view');
+  }
+  
+  $(document).on('click', '.btn-grid', gridList);
+  $(document).on('click', '.btn-list', showList);
 
-// Below Javascript is for third row to show selected city and details 
 
+  /*below js is for filter start*/
 var checkboxes = document.querySelectorAll(".checkbox");
 
 
@@ -92,8 +90,40 @@ function removeElement(value) {
     filtersSection.removeChild(elementToBeRemoved);
 
 }
+/*below js is for filter end*/
 
 
 
 
 
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}

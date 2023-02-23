@@ -1,3 +1,9 @@
+.dropdown-menu{
+  height: auto; 
+  max-height: 200px;
+  overflow-x: hidden;
+}
+
 /*inside the description css  available start*/
 
   /*Css for seats start*/
@@ -305,3 +311,14 @@
   overflow-y: scroll;
 }
 
+
+@media (max-width: 576px) { 
+    .samebox{
+      width: 50%;
+    }
+    .samebox1{
+      width: 50%;
+    }
+
+
+ }

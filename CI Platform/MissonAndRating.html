@@ -15,379 +15,341 @@
 
 <body>
 
+    <section class="main">
 
-    <!--First Row For Navbar-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary p-0">
-        <div class="container-fluid">
-            <a class="navbar-brand p-2 mt-1" href="#"><img src="./Assets/logo.png" alt="">
-            </a>
 
-            <!--Below portion is header part of the navbar at the time of responsive means width is <992 -->
-            <div class="d-sm-block d-lg-none d-flex">
-                <div class="dropdown d-flex">
-                    <form class="d-none d-md-block me-2 mt-1" role="search">
-                        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-                    </form>
-
-                    <img src="./Assets/bell.png" class="img-fulid mt-1 me-2" height="30px" alt="">
-
-                    <a class="btn btn-secondary dropdown bg-transparent text-dark border-0 pt-0 policyDropdown p-0"
-                        href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="./Assets/user-img.png " class="rounded-circle me-2" width="40px" height="40px" alt="">
+        <!-- First navbar  -->
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+          <div class="container">
+            <div id="navigation-bar">
+              <button class="navbar-toggler border-0" href="#menubar" role="button" data-bs-toggle="offcanvas"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                id="navbar-toggler-btn">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-start" tabindex="-1" id="menubar" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <li class="navbar-nav nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Stories</a>
+                  </li>
+                  <li class="navbar-nav nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      Privacy
                     </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                      <li><a class="dropdown-item" href="#">Volunteering</a></li>
+                      <li><a class="dropdown-item" href="#">Sponsered</a></li>
+    
                     </ul>
-
-                    <!--Button for off canvas-->
-                    <button class="navbar-toggler" href="#offcanvasExample" role="button" data-bs-toggle="offcanvas"
-                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                  </li>
                 </div>
-
+              </div>
+              </ul>
             </div>
-
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
-                aria-labelledby="offcanvasExampleLabel">
-
-                <!--Header part of inside off-canvas -->
-                <div class="offcanvas-header">
-                    <a class="navbar-brand p-2 mt-1 offcanvas-title" id="offcanvasExample" href="#"><img
-                            src="./Assets/logo.png" alt=""></a>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-
-                <!--Body part of canvas -->
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-                        <!--Explore Dropdown-->
-                        <li class="nav-item mt-2 px-2">
-                            <div class="dropdown">
-                                <a class="btn btn-secondary dropdown-toggle bg-transparent text-dark border-0 pt-0 ps-0"
-                                    href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Explore
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </div>
-                        </li>
-
-                        <!--Story Section-->
-                        <li class="nav-item px-2">
-                            <a class="nav-link active" aria-current="page" href="#">Stories</a>
-                        </li>
-
-                        <!--News Section-->
-                        <li class="nav-item px-2">
-                            <a class="nav-link active" aria-current="page" href="#">News</a>
-                        </li>
-
-                        <!--Policy Section-->
-
-                        <li class="nav-item mt-2 px-2">
-                            <div class="dropdown">
-                                <a class="btn btn-secondary dropdown-toggle bg-transparent text-dark border-0 pt-0 policyDropdown"
-                                    href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Policy
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-
-                    <!--left side of navbar at the time of desktop view means full width this will show and remaining time it will hide -->
-                    <div class="d-none d-lg-block">
-                        <div class="dropdown ">
-                            <img src="./Assets/bell.png" class="img-fulid mt-1 me-1" height="30px" alt="">
-                            <a class="btn btn-secondary dropdown-toggle bg-transparent text-dark border-0 pt-0 policyDropdown p-0"
-                                href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src="./Assets/user-img.png " class="rounded-circle " width="40px" height="40px"
-                                    alt=""> Evan Donohue
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                </div>
+            <div id="navigation-bar">
+              <ul class="navbar-nav d-flex">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="./Assets/user-img.png" class="rounded-circle" height="35" width="35" alt="Profile pic"
+                      loading="lazy" />
+                    Evan Donohue
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                    <li><a class="dropdown-item" href="#">Dashboard</a></li>
+                    <li><a class="dropdown-item" href="#">My Account</a></li>
+                    <li><a class="dropdown-item" href="#">Help Center</a></li>
+                    <li><a class="dropdown-item" href="#">LogOut</a></li>
+                  </ul>
+                </li>
+              </ul>
             </div>
-        </div>
-    </nav>
-    <hr class="m-0">
-
-    <!--First Row Of Navbar is end-->
-
-
-    <!--Second Row For Navbar is start-->
-
-    <nav class="navbar navbar-expand-lg bg-body-tertiary p-0">
-        <div class="container-fluid p-0">
-
-            <!--Serach bar of second row-->
-            <form class=" me-2 mt-1 d-flex" style="width:40%" role="search" id="seach">
-                <img src="./Assets/search.png" width="20px" height="20px" class="mt-2 mx-3 " alt="">
-                <input class="form-control col-lg-6 border-0 col-md-12" type="search" placeholder="Search"
-                    aria-label="Search">
-            </form>
-
-            <button class="navbar-toggler me-2" href="#offcanvasExample1" role="button" data-bs-toggle="offcanvas"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <!-- <span class="navbar-toggler-icon"></span> -->
-                <img src="./Assets/filter.png" alt="">
+          </div>
+        </nav>
+    
+    
+    
+        <!-- Second Row for Search mission  -->
+        <div class="navbar-expand-md container-fluid border-top border-bottom bg-light px-0">
+          <div class="row container mx-auto px-0">
+            <div class="col-10 col-md-5 py-2">
+              <form class="d-flex mx-5">
+                <img src="./Assets/search.png" id="search-icon" height="20" width="20" class="mt-2">
+                <input class="form-control me-2 border-0 bg-light" type="search" placeholder="Search mission..."
+                  aria-label="Search">
+              </form>
+            </div>
+            <button class="col-auto navbar-toggler border-0 text-end" href="#filters" role="button"
+              data-bs-toggle="offcanvas" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation" id="navbar-toggler-btn">
+              <img src="./Assets/filter.png" alt="">
             </button>
-
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample1"
-                aria-labelledby="offcanvasExampleLabel">
-
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasExample1">Offcanvas</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="filters" aria-labelledby="offcanvasExampleLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Filters</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+    
+    
+                <!-- Country Section  -->
+                <div class="col-auto py-2 px-2 mx-auto searchByFilter">
+                  <ul class="navbar-nav" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Country
+                      </a>
+                      <ul class="dropdown-menu scrollable-menu" aria-labelledby="navbarScrollingDropdown">
+                        <li><a class="dropdown-item" href="#">Afghanistan</a></li>
+                        <li><a class="dropdown-item" href="#">Albania</a></li>
+                        <li><a class="dropdown-item" href="#">Algeria</a></li>
+                        <li><a class="dropdown-item" href="#">Barbados</a></li>
+                        <li><a class="dropdown-item" href="#">Belarus</a></li>
+                        <li><a class="dropdown-item" href="#">Belgium</a></li>
+                        <li><a class="dropdown-item" href="#">Belgium</a></li>
+                        <li><a class="dropdown-item" href="#">Belgium</a></li>
+                        <li><a class="dropdown-item" href="#">Belgium</a></li>
+                        <li><a class="dropdown-item" href="#">Belgium</a></li>
+                        <li><a class="dropdown-item" href="#">Belgium</a></li>
+                        <li><a class="dropdown-item" href="#">Belgium</a></li>
+                        <li><a class="dropdown-item" href="#">Belgium</a></li>
+                      </ul>
+                    </li>
+                  </ul>
                 </div>
-
-
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav ">
-                        <li class="nav-item mx-5 ">
-                            <div class="dropdown">
-                                <a class="btn btn-secondary dropdown-toggle bg-transparent text-dark border-0 pt-0 ps-0"
-                                    href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Country
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="nav-item mx-5 ">
-                            <div class="dropdown">
-                                <a class="btn btn-secondary dropdown-toggle bg-transparent text-dark border-0 pt-0 ps-0"
-                                    href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    City
-                                </a>
-                                <ul class="dropdown-menu scrollable-menu ps-2">
-                                    <li class="form-check">
-                                        <input class="form-check-input checkbox" type="checkbox" value="Surat"
-                                            id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Surat
-                                        </label>
-                                    </li>
-                                    <li class="form-check">
-                                        <input class="form-check-input checkbox" type="checkbox" value="Ahmedabad"
-                                            id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Ahmedabad
-                                        </label>
-                                    </li>
-                                    <li class="form-check">
-                                        <input class="form-check-input checkbox" type="checkbox" value="Baroda"
-                                            id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Baroda
-                                        </label>
-                                    </li>
-                                    <li class="form-check">
-                                        <input class="form-check-input checkbox" type="checkbox" value="Rajkot"
-                                            id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Rajkot
-                                        </label>
-                                    </li>
-                                    <li class="form-check">
-                                        <input class="form-check-input checkbox" type="checkbox" value="Bharuch"
-                                            id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Bharuch
-                                        </label>
-                                    </li>
-                                    <li class="form-check">
-                                        <input class="form-check-input checkbox" type="checkbox" value="Ghandhinagar"
-                                            id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Ghandhinagar
-                                        </label>
-                                    </li>
-                                    <li class="form-check">
-                                        <input class="form-check-input checkbox" type="checkbox" value="Mahesana"
-                                            id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Mahesana
-                                        </label>
-                                    </li>
-                                    <li class="form-check">
-                                        <input class="form-check-input checkbox" type="checkbox" value="Junagadh"
-                                            id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Junagadh
-                                        </label>
-                                    </li>
-                                    <li class="form-check">
-                                        <input class="form-check-input checkbox" type="checkbox" value="Amreli"
-                                            id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Amreli
-                                        </label>
-                                    </li>
-
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="nav-item mx-5 ">
-                            <div class="dropdown">
-                                <a class="btn btn-secondary dropdown-toggle bg-transparent text-dark border-0 pt-0 ps-0"
-                                    href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Theme
-                                </a>
-                                <ul class="dropdown-menu scrollable-menu ps-2">
-                                    <li class="form-check">
-                                        <input class="form-check-input checkbox" type="checkbox" value="Education"
-                                            id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Education
-                                        </label>
-                                    </li>
-                                    <li class="form-check">
-                                        <input class="form-check-input checkbox" type="checkbox" value="Children"
-                                            id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Children
-                                        </label>
-                                    </li>
-                                    <li class="form-check">
-                                        <input class="form-check-input checkbox" type="checkbox" value="Health"
-                                            id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Health
-                                        </label>
-                                    </li>
-                                    <li class="form-check">
-                                        <input class="form-check-input checkbox" type="checkbox" value="Animals"
-                                            id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Animals
-                                        </label>
-                                    </li>
-                                    <li class="form-check">
-                                        <input class="form-check-input checkbox" type="checkbox" value="Nutritions"
-                                            id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Nutritions
-                                        </label>
-                                    </li>
-                                    <li class="form-check">
-                                        <input class="form-check-input checkbox" type="checkbox" value="Environment"
-                                            id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Environments
-                                        </label>
-                                    </li>
-                                    <li class="form-check">
-                                        <input class="form-check-input checkbox" type="checkbox" value="NGO"
-                                            id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            NGO
-                                        </label>
-                                    </li>
-                                    <li class="form-check">
-                                        <input class="form-check-input checkbox" type="checkbox" value="Extra Theme"
-                                            id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Extra Theme
-                                        </label>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="nav-item mx-5 ">
-                            <div class="dropdown">
-                                <a class="btn btn-secondary dropdown-toggle bg-transparent text-dark border-0 pt-0 ps-0"
-                                    href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    skills
-                                </a>
-                                <ul class="dropdown-menu scrollable-menu ps-2">
-                                    <li class="form-check">
-                                        <input class="form-check-input checkbox" type="checkbox" value="Skill-1"
-                                            id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Skill-1
-                                        </label>
-                                    </li>
-                                    <li class="form-check">
-                                        <input class="form-check-input checkbox" type="checkbox" value="Skill-2"
-                                            id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Skill-2
-                                        </label>
-                                    </li>
-                                    <li class="form-check">
-                                        <input class="form-check-input checkbox" type="checkbox" value="Skill-3"
-                                            id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Skill-3
-                                        </label>
-                                    </li>
-                                    <li class="form-check">
-                                        <input class="form-check-input checkbox" type="checkbox" value="Skill-4"
-                                            id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Skill-4
-                                        </label>
-                                    </li>
-                                    <li class="form-check">
-                                        <input class="form-check-input checkbox" type="checkbox" value="Skill-5"
-                                            id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Skill-5
-                                        </label>
-                                    </li>
-                                    <li class="form-check">
-                                        <input class="form-check-input checkbox" type="checkbox" value="Skill-6"
-                                            id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Skill-6
-                                        </label>
-                                    </li>
-                                    <li class="form-check">
-                                        <input class="form-check-input checkbox" type="checkbox" value="Skill-7"
-                                            id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Skill-7
-                                        </label>
-                                    </li>
-                                    <li class="form-check">
-                                        <input class="form-check-input checkbox" type="checkbox" value="Skill-8"
-                                            id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Skill-8
-                                        </label>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-
-                    </ul>
+    
+                <!-- City Section  -->
+                <div class="col-auto py-2 px-2 mx-auto searchByFilter">
+                  <ul class="navbar-nav" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        City
+                      </a>
+                      <ul class="dropdown-menu scrollable-menu" aria-labelledby="navbarScrollingDropdown">
+                        <input class="form-check-input checkbox ms-2" type="checkbox" value="Afghanistan" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Afghanistan
+                        </label> <br>
+                        <input class="form-check-input checkbox ms-2" type="checkbox" value="Albania" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Albania
+                        </label> <br>
+                        <input class="form-check-input checkbox ms-2" type="checkbox" value="Algeria" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Algeria
+                        </label> <br>
+                        <input class="form-check-input checkbox ms-2" type="checkbox" value="Barbados" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Barbados
+                        </label> <br>
+                        <input class="form-check-input checkbox ms-2" type="checkbox" value="Belarus" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Belarus
+                        </label> <br>
+                        <input class="form-check-input checkbox ms-2" type="checkbox" value="Belgium" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Belgium
+                        </label> <br>
+                        <input class="form-check-input checkbox ms-2" type="checkbox" value="New York" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          New York
+                        </label> <br>
+                        <input class="form-check-input checkbox ms-2" type="checkbox" value="India" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          India
+                        </label> <br>
+                        <input class="form-check-input checkbox ms-2" type="checkbox" value="London" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          London
+                        </label> <br>
+                        <input class="form-check-input checkbox ms-2" type="checkbox" value="USA" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          USA
+                        </label>
+    
+                      </ul>
+                    </li>
+                  </ul>
                 </div>
+    
+                <!-- Theme Section  -->
+                <div class="col-auto py-2 px-2 mx-auto searchByFilter">
+                  <ul class="navbar-nav" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Theme
+                      </a>
+                      <ul class="dropdown-menu scrollable-menu" aria-labelledby="navbarScrollingDropdown">
+                        <input class="form-check-input checkbox ms-2" type="checkbox" value="Theme1" id="flexCheckDefault">
+                        <label class="form-check-label " for="flexCheckDefault">
+                          Theme1
+                        </label> <br>
+                        <input class="form-check-input checkbox ms-2" type="checkbox" value="Theme2" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Theme2
+                        </label> <br>
+                        <input class="form-check-input checkbox ms-2" type="checkbox" value="Theme3" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Theme3
+                        </label> <br>
+                        <input class="form-check-input checkbox ms-2" type="checkbox" value="Theme4" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Theme4
+                        </label> <br>
+                        <input class="form-check-input checkbox ms-2" type="checkbox" value="Theme5" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Theme5
+                        </label> <br>
+                        <input class="form-check-input checkbox ms-2" type="checkbox" value="Theme6" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Theme6
+                        </label> <br>
+                        <input class="form-check-input checkbox ms-2" type="checkbox" value="Theme7" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Theme7
+                        </label> <br>
+                        <input class="form-check-input checkbox ms-2" type="checkbox" value="Theme8" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Theme8
+                        </label> <br>
+                        <input class="form-check-input checkbox ms-2" type="checkbox" value="Theme9" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Theme9
+                        </label> <br>
+                        <input class="form-check-input checkbox ms-2" type="checkbox" value="Theme10" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Theme10
+                        </label>
+    
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+    
+                <!-- Skills Section  -->
+                <div class="col-auto py-2 px-2 mx-auto searchByFilter">
+                  <ul class="navbar-nav" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Skills
+                      </a>
+                      <ul class="dropdown-menu scrollable-menu" aria-labelledby="navbarScrollingDropdown">
+                        <input class="form-check-input checkbox ms-2" type="checkbox" value="Skills1" id="flexCheckDefault">
+                        <label class="form-check-label " for="flexCheckDefault">
+                          Skills1
+                        </label> <br>
+                        <input class="form-check-input checkbox ms-2" type="checkbox" value="Skills2" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Skills2
+                        </label> <br>
+                        <input class="form-check-input checkbox ms-2" type="checkbox" value="Skills3" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Skills3
+                        </label> <br>
+                        <input class="form-check-input checkbox ms-2" type="checkbox" value="Skills4" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Skills4
+                        </label> <br>
+                        <input class="form-check-input checkbox ms-2" type="checkbox" value="Theme5" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Skills5
+                        </label> <br>
+                        <input class="form-check-input checkbox ms-2" type="checkbox" value="Skills6" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Skills6
+                        </label> <br>
+                        <input class="form-check-input checkbox ms-2" type="checkbox" value="Skills7" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Skills7
+                        </label> <br>
+                        <input class="form-check-input checkbox ms-2" type="checkbox" value="Skills8" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                        Skills8
+                        </label> <br>
+                        <input class="form-check-input checkbox ms-2" type="checkbox" value="Skills9" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Skills9
+                        </label> <br>
+                        <input class="form-check-input checkbox ms-2" type="checkbox" value="Skills10" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Skills10
+                        </label>
+    
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+    
+    
+              </div>
             </div>
+          </div>
         </div>
-    </nav>
+    
+    
+    
+    
+        <!-- Filter Mission  -->
+    
+        <!-- <div class=" container" id="selected-filters"> -->
+    
+          <!-- <ul class="d-flex mt-2 " style="list-style: none;">
+            <li class="items d-flex border px-2 ms-2">
+              <p style="font-size: 12px;">Tree Plantation</p>
+              <img src="./Assets/cancel.png" alt="" width="10px" height="10px" class="mt-1 ps-1">
+            </li>
+            <li class="items d-flex ms-3 px-2 border">
+              <p style="font-size: 12px;">Canada</p>
+              <img src="./Assets/cancel.png" alt="" width="10px" height="10px" class="mt-1 ps-1">
+            </li>
+            <li class="items d-flex ms-3 px-2 border">
+              <p style="font-size: 12px;">Toronto</p>
+              <img src="./Assets/cancel.png" alt="" width="10px" height="10px" class="mt-1 ps-1">
+            </li>
+            <li class="items d-flex ms-3 px-2 border">
+              <p style="font-size: 12px;">Montreal</p>
+              <img src="./Assets/cancel.png" alt="" width="10px" height="10px" class="mt-1 ps-1">
+            </li>
+            <li class="items d-flex ms-3 px-2 border">
+              <p style="font-size: 12px;">Environmrnt</p>
+              <img src="./Assets/cancel.png" alt="" width="10px" height="10px" class="mt-1 ps-1">
+            </li>
+            <li class="items d-flex ms-3 px-2 border">
+              <p style="font-size: 12px;">Nutrition</p>
+              <img src="./Assets/cancel.png" alt="" width="10px" height="10px" class="mt-1 ps-1">
+            </li>
+            <li class="items d-flex ms-3 px-2 border">
+              <p style="font-size: 12px;">Anthropology</p>
+              <img src="./Assets/cancel.png" alt="" width="10px" height="10px" class="mt-1 ps-1">
+            </li>
+            <li class="items d-flex ms-3 px-2 border">
+              <p style="font-size: 12px;">Environmental Science</p>
+              <img src="./Assets/cancel.png" alt="" width="10px" height="10px" class="mt-1 ps-1">
+            </li>
+            <li class="items d-flex ms-3 px-2 ">
+              <p style="font-size: 12px;">Clear all</p>
+    
+            </li>
+    
+          </ul> -->
+        <!-- </div> -->
+    
+        <div class="filters-section d-flex align-items-center flex-wrap justify-content-start" style="padding-left: 130px ;">
+    
+        </div>
+    
+    
+      </section>
 
-    <!--Second Row For Navbar is end-->
 
 
     <!--Third Row For Filter start-->
@@ -396,8 +358,10 @@
     </div>
     <!--Third Row For Filter end-->
 
-    <!--Fourth row all about description and photos about mission start -->
+    <!--Fourth row for mission slider and mission tab with volunteer start -->
     <div class="container-fluid mt-2">
+
+        <!-- First Row for slider and details part start  -->
         <div class="row ">
 
             <!-- Column for left part  -->
@@ -408,29 +372,29 @@
 
                     <!-- Full-width images with number text -->
                     <div class="mySlides">
-                        <img src="./Assets/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-5.png"
+                        <img src="./Assets/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-4.png"
                             style="width:100%">
                     </div>
 
                     <div class="mySlides">
-                        <img src="./Assets/img2.png" style="width:100%">
+                        <img src="./Assets/img1.png" style="width:100%">
                     </div>
 
                     <div class="mySlides">
-                        <img src="./Assets/Grow-Trees-On-the-path-to-environment-sustainability-4.png"
+                        <img src="./Assets/Grow-Trees-On-the-path-to-environment-sustainability-login.png"
                             style="width:100%">
                     </div>
 
                     <div class="mySlides">
-                        <img src="./Assets/img22.png" style="width:100%">
+                        <img src="./Assets/img11.png" style="width:100%">
                     </div>
 
                     <div class="mySlides">
-                        <img src="./Assets/img.png" style="width:100%">
+                        <img src="./Assets/flower.avif" style="width:100%">
                     </div>
 
                     <div class="mySlides">
-                        <img src="./Assets/image.png" style="width:100%">
+                        <img src="./Assets/image1.png" style="width:100%">
                     </div>
 
                     <!-- Next and previous buttons -->
@@ -475,7 +439,7 @@
             <div class="col-lg-6 mt-2">
                 <!--Desrcription  start-->
                 <div class="description">
-                    <p class="fs-3 mt-2 ps-2" style="font-weight: 200;">CSR initiative stands for coffee & <br>Farmer
+                    <p class="fs-3 mt-2 ps-2  font-weight-bold">CSR initiative stands for coffee & <br>Farmer
                         Equity</p>
                     <p class="mb-0 ps-2"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum accusamus
                         alias fugiat maiores quae quas.</p>
@@ -517,10 +481,10 @@
 
                 <!--Button Section start-->
                 <div class="mt-4 d-flex justify-content-between">
-                    <a href="" class="btn btn-outline-dark descBtn px-2" style="width:45%"><img
+                    <a href="" class="btn  descBtn px-2" style="width:45%; border:2px solid #757575"><img
                             src="./Assets/heart1.png" alt=""> Add to
                         Favourite</a>
-                    <a href="" class="btn btn-outline-dark descBtn px-2" style="width:45%"><img src="./Assets/add1.png"
+                    <a href="" class="btn  descBtn px-2" style="width:45%; border:2px solid #757575"><img src="./Assets/add1.png"
                             alt=""> Recommended to
                         Co-Worker</a>
                 </div>
@@ -541,22 +505,22 @@
                 <!--City,theme,date,organization section is start-->
                 <div class="container-fluid">
                     <div class="row d-flex mt-5 mx-auto">
-                        <div class="col-md-2 col-sm-6 border ps-2 pt-2 mx-4">
+                        <div class="col-md-3 col-sm-6 border ps-2 pt-2 samebox">
                             <img src="./Assets/pin1.png" alt="">
                             <p class="mb-0 mt-4">City</p>
                             <p class="mb-0">London</p>
-                        </div>
-                        <div class="col-md-2 col-sm-6 border ps-2 pt-2 mx-4">
+                        </div>  
+                        <div class="col-md-3 col-sm-6 border ps-2 pt-2 samebox">
                             <img src="./Assets/web.png" alt="">
                             <p class="mb-0 mt-4">Theme</p>
                             <p class="mb-0">Environment</p>
                         </div>
-                        <div class="col-md-2 col-sm-6 border ps-2 pt-2 mx-4">
+                        <div class="col-md-3 col-sm-6 border ps-2 pt-2 samebox1">
                             <img src="./Assets/calender.png" alt="">
                             <p class="mt-2 mb-0">Date</p>
                             <p class="mb-0">Ongoing Oppertunity</p>
                         </div>
-                        <div class="col-md-2 col-sm-6 border  ps-2 pt-2 mx-4">
+                        <div class="col-md-3 col-sm-6 border  ps-2 pt-4 samebox1">
                             <img src="./Assets/organization.png" alt="">
                             <p class="mb-0 mt-4">Organization</p>
                             <p class="mb-0">CSE Network</p>
@@ -565,7 +529,8 @@
                 </div>
                 <!--City,theme,date,organization section is end-->
                 <div class="text-center mt-3 mb-3">
-                    <a href="" class="btn btn-outline-warning py-2 px-3 " id="applyBtn">Apply Now <img
+                    <a href="" class="btn  py-2 px-3 " id="applyBtn" style="border: 2px solid #F88634;
+                    color: #F88634;">Apply Now <img
                             src="./Assets/right-arrow.png" class="ps-3" alt=""></a>
                 </div>
 
@@ -573,9 +538,11 @@
             <!--no of seats section inside description end-->
 
         </div>
+        <!-- First Row for slider and details part end  -->
 
 
-        <!--Third row for tabs and information about volunteers start-->
+
+        <!--second row for tabs and information about volunteers start-->
         <div class="row mt-3">
 
             <!-- left part for tabs  -->
@@ -621,19 +588,20 @@
                             laudantium eligendi mollitia, molestiae soluta maxime dignissimos nesciunt laboriosam quas
                             tempora, dicta ad esse laborum error repellendus optio accusantium.</p>
                         <h3>Documents</h3>
-                        <div class="d-flex justify-content-evenly ">
-                            <button type="button" class="btn btn-outline-dark docBtn"><img src="./Assets/doc.png"
+                        <div class="d-flex flex-wrap justify-content-evenly ">
+                            <button type="button" class="btn  docBtn mb-2" style="border:2px solid #757575"><img src="./Assets/doc.png"
                                     alt="">
                                 lorem-ipsum.pdf</button>
-                            <button type="button" class="btn btn-outline-dark docBtn"><img src="./Assets/doc.png"
+                            <button type="button" class="btn  docBtn mb-2" style="border:2px solid #757575"><img src="./Assets/doc.png"
                                     alt="">
                                 at_vero_eos_accusamus.doc</button>
-                            <button type="button" class="btn btn-outline-dark docBtn"><img src="./Assets/doc.png"
+                            <button type="button" class="btn  docBtn mb-2" style="border:2px solid #757575"><img src="./Assets/doc.png"
                                     alt="">
                                 import_doc.xls</button>
                         </div>
                     </div>
                     <!--First Tab end-->
+
                     <!--Second Tab Start-->
                     <div class="tab-pane fade ms-4" id="ex1-tabs-2" role="tabpanel" aria-labelledby="ex1-tab-2">
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id, porro corporis? Illo
@@ -642,14 +610,16 @@
                             perferendis impedit aliquam ut? Sequi mollitia corrupti facilis.</p>
                     </div>
                     <!--Second Tab End-->
+
                     <!--Third Tab Start-->
-                    <div class="tab-pane fade ms-2 pb-2 " style="background-color: rgb(243, 243, 243);" id="ex1-tabs-3"
+                    <div class="tab-pane fade ms-2 pb-2 " style="background-color: rgb(208, 236, 241);" id="ex1-tabs-3"
                         role="tabpanel" aria-labelledby="ex1-tab-3">
                         <div class="form-group ps-2 pt-2 pe-2">
                             <textarea class="form-control " id="exampleFormControlTextarea1" rows="3"
                                 placeholder="Enter your comments..."></textarea>
                         </div>
-                        <a href="" class="btn btn-outline-warning ms-2 mt-2" id="postCommentBtn">Post Comment</a>
+                        <a href="" class="btn  ms-2 mt-2" id="postCommentBtn" style="border: 2px solid #F88634;
+                        color: #F88634;">Post Comment</a>
                         <div class="Scroll">
                             <div class="d-flex mt-2 ms-2 bg-light rounded-2 me-2">
                                 <div class="my-auto">
@@ -657,7 +627,7 @@
                                         alt="">
                                 </div>
                                 <div class="ps-3">
-                                    <p class="mb-0">Margaret Walsh</p>
+                                    <p class="mb-0">Andrew Johnson</p>
                                     <small style="font-size: 12px;">Monday, October 21,2019,4.57 PM</small>
                                     <p>Nice mission great oppertunity for peoples</p>
                                 </div>
@@ -668,7 +638,7 @@
                                         alt="">
                                 </div>
                                 <div class="ps-3">
-                                    <p class="mb-0">Margaret Walsh</p>
+                                    <p class="mb-0">Charlis vigue</p>
                                     <small style="font-size: 12px;">Monday, October 21,2019,4.57 PM</small>
                                     <p>Nice mission great oppertunity for peoples</p>
                                 </div>
@@ -679,7 +649,7 @@
                                         alt="">
                                 </div>
                                 <div class="ps-3">
-                                    <p class="mb-0">Margaret Walsh</p>
+                                    <p class="mb-0">kathryn Robert</p>
                                     <small style="font-size: 12px;">Monday, October 21,2019,4.57 PM</small>
                                     <p>Nice mission great oppertunity for peoples</p>
                                 </div>
@@ -690,7 +660,7 @@
                                         alt="">
                                 </div>
                                 <div class="ps-3">
-                                    <p class="mb-0">Margaret Walsh</p>
+                                    <p class="mb-0">Estella Fowles</p>
                                     <small style="font-size: 12px;">Monday, October 21,2019,4.57 PM</small>
                                     <p>Nice mission great oppertunity for peoples</p>
                                 </div>
@@ -702,7 +672,7 @@
                                         alt="">
                                 </div>
                                 <div class="ps-3">
-                                    <p class="mb-0">Margaret Walsh</p>
+                                    <p class="mb-0">Rose lewis</p>
                                     <small style="font-size: 12px;">Monday, October 21,2019,4.57 PM</small>
                                     <p>Nice mission great oppertunity for peoples</p>
                                 </div>
@@ -713,7 +683,7 @@
                                         alt="">
                                 </div>
                                 <div class="ps-3">
-                                    <p class="mb-0">Margaret Walsh</p>
+                                    <p class="mb-0">Raymon pabon </p>
                                     <small style="font-size: 12px;">Monday, October 21,2019,4.57 PM</small>
                                     <p>Nice mission great oppertunity for peoples</p>
                                 </div>
@@ -724,7 +694,7 @@
                                         alt="">
                                 </div>
                                 <div class="ps-3">
-                                    <p class="mb-0">Margaret Walsh</p>
+                                    <p class="mb-0">Travis steen</p>
                                     <small style="font-size: 12px;">Monday, October 21,2019,4.57 PM</small>
                                     <p>Nice mission great oppertunity for peoples</p>
                                 </div>
@@ -735,7 +705,7 @@
                                         alt="">
                                 </div>
                                 <div class="ps-3">
-                                    <p class="mb-0">Margaret Walsh</p>
+                                    <p class="mb-0">Sarah Santellians</p>
                                     <small style="font-size: 12px;">Monday, October 21,2019,4.57 PM</small>
                                     <p>Nice mission great oppertunity for peoples</p>
                                 </div>
@@ -746,21 +716,23 @@
                                         alt="">
                                 </div>
                                 <div class="ps-3">
-                                    <p class="mb-0">Margaret Walsh</p>
+                                    <p class="mb-0">Linda richards</p>
                                     <small style="font-size: 12px;">Monday, October 21,2019,4.57 PM</small>
                                     <p>Nice mission great oppertunity for peoples</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!--Third Tab Start-->
+                    <!--Third Tab end-->
+                    
                 </div>
                 <!-- Tabs content -->
             </div>
 
-            <!-- left part for volunteer  -->
+            <!-- Right part for volunteer  -->
             <div class="col-lg-4 col-sm-12">
-                <!--Below code for volunteers skills days and rating start-->
+
+                <!--Div  for volunteers skills, day and rating start-->
                 <div class="me-5 border mb-4">
                     <!-- Tabs navs -->
                     <ul class="nav nav-tabs mb-3 " id="ex1" role="tablist">
@@ -771,7 +743,7 @@
                     </ul>
                     <!-- Tabs navs -->
 
-                    <!-- Tabs content -->
+                    <!-- Tabs content start-->
                     <div class="tab-content " id="ex1-content">
                         <div class="tab-pane fade show active ps-2" id="ex1-tabs-1" role="tabpanel"
                             aria-labelledby="ex1-tab-1">
@@ -796,9 +768,10 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Tabs content -->
+                    <!-- Tabs content end -->
+
                 </div>
-                <!--above code for volunteers skills days and rating end-->
+                <!--div code for volunteers skills, days and rating end-->
 
                 <!--Below code for recent volunteers start-->
 
@@ -858,17 +831,17 @@
                                     <p style="font-size: 13px;">Ramond Paybon</p>
                                 </div>
                             </div>
-                            <nav aria-label="Page navigation example">
+                            <nav aria-label="Page navigation example" >
                                 <ul class="pagination">
-                                    <li class="page-item">
+                                    <li class="page-item ms-4">
                                         <a class="page-link" href="#" aria-label="Previous">
                                             <span aria-hidden="true">&laquo;</span>
                                         </a>
                                     </li>
-                                    <li class="page-item px-3"><a class="page-link" href="#">1-9 of 15 Recent
+                                    <li class="page-item px-3"><a class="page-link ms-2" href="#">1-9 of 15 Recent
                                             Volunteeres</a></li>
                                     <li class="page-item ps-1">
-                                        <a class="page-link" href="#" aria-label="Next">
+                                        <a class="page-link  ms-2" href="#" aria-label="Next">
                                             <span aria-hidden="true">&raquo;</span>
                                         </a>
                                     </li>
@@ -881,7 +854,7 @@
                 <!--abov code for recent volunteers end-->
             </div>
         </div>
-        <!--Third row for tabs and information about volunteers end-->
+        <!--second row for tabs and information about volunteers end-->
     </div>
 
 
@@ -889,8 +862,8 @@
 
 
     <!--fifth row all about related card start -->
-    <div class="fs-3 text-center mb-4 mt-4" style="font-weight: 300;">
-        Related Mission
+    <div class="fs-3 text-center mb-4 mt-4" style=" font-family: NotoSans-Light,; color: #414141;">
+        Related Missions
     </div>
 
 
@@ -911,7 +884,7 @@
                             alt="Card image cap">
                         <div class="position-absolute c1-location py-1 px-2">
                             <img src="./Assets/pin.png" alt="Location">
-                            Toronto
+                            London
                         </div>
                         <div class="position-absolute c1-heart" style="height:35px; width: 38px;">
                             <img src="./Assets/heart.png" alt="Heart" class="ps-2 py-2">
@@ -946,7 +919,7 @@
                         <div class="border-top border-bottom pb-3 position-relative pt-2">
                             <div class="d-flex align-items-center">
                                 <div class="mt-1 pe-0 me-2">
-                                    <img src="./Assets/Seats-left.png" alt="" width="25px" height="25px">
+                                    <img src="./Assets/Already-volunteered.png" alt="" width="25px" height="25px">
                                 </div>
                                 <div class="px-0">
                                     <h5 class="mb-0 mt-1">250</h5>
@@ -954,11 +927,12 @@
                                 </div>
                             </div>
                             <div class="position-absolute" id="missionDeadline">
-                                <p class="mb-0 px-1" style="font-size: 10px;">Ongoing Oppertunity</p>
+                                <p class="mb-0 px-1" style="font-size: 10px;">Ongoing Opportunity</p>
                             </div>
                         </div>
                         <div class="text-center mt-3">
-                            <a href="" class="btn btn-outline-warning cardBtn">Apply <img src="./Assets/right-arrow.png"
+                            <a href="" class="btn  cardBtn" style="border: 2px solid #F88634;
+                            color: #F88634;">Apply <img src="./Assets/right-arrow.png"
                                     alt=""></a>
                         </div>
                     </div>
@@ -979,7 +953,7 @@
                             alt="Card image cap">
                         <div class="position-absolute c1-location py-1 px-2">
                             <img src="./Assets/pin.png" alt="Location">
-                            Toronto
+                            Cape Town
                         </div>
                         <div class="position-absolute c1-heart" style="height:35px; width: 38px;">
                             <img src="./Assets/heart.png" alt="Heart" class="ps-2 py-2">
@@ -1040,7 +1014,8 @@
                             </div>
                         </div>
                         <div class="text-center mt-3">
-                            <a href="" class="btn btn-outline-warning cardBtn">Apply <img src="./Assets/right-arrow.png"
+                            <a href="" class="btn cardBtn" style="border: 2px solid #F88634;
+                            color: #F88634;">Apply <img src="./Assets/right-arrow.png"
                                     alt=""></a>
                         </div>
                     </div>
@@ -1060,7 +1035,7 @@
                             alt="Card image cap">
                         <div class="position-absolute c1-location py-1 px-2">
                             <img src="./Assets/pin.png" alt="Location">
-                            Toronto
+                            Paris
                         </div>
                         <div class="position-absolute c1-heart" style="height:35px; width: 38px;">
                             <img src="./Assets/heart.png" alt="Heart" class="ps-2 py-2">
@@ -1107,7 +1082,8 @@
                             </div>
                         </div>
                         <div class="text-center mt-3">
-                            <a href="" class="btn btn-outline-warning cardBtn">Apply <img src="./Assets/right-arrow.png"
+                            <a href="" class="btn  cardBtn" style="border: 2px solid #F88634;
+                            color: #F88634;">Apply <img src="./Assets/right-arrow.png"
                                     alt=""></a>
                         </div>
                     </div>
@@ -1115,6 +1091,7 @@
 
                 </div>
             </div>
+
             <!--related mission is end-->
         </div>
         <!--fifth row all about related card end -->
@@ -1123,7 +1100,7 @@
 
 
     <!--Pagination start-->
-    <div aria-label="Page navigation example">
+    <div aria-label="Page navigation example" class="mt-5">
         <ul class="pagination  justify-content-center">
             <li class="page-item px-2"><a class="page-link" href="#"><img src="./Assets/left.png" alt=""></a></li>
             <li class="page-item px-2 "><a class="page-link " href="#"><img src="./Assets/previous.png" alt=""></a></li>

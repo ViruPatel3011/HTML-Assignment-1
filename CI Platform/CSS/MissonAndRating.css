@@ -47,7 +47,12 @@
 /* Hide the images by default */
 .mySlides {
   display: none;
+  
 }
+
+.mySlides img{
+  object-fit: cover;
+ }
 
 /* Add a pointer when hovering over the thumbnail images */
 .cursor {
@@ -108,7 +113,10 @@
 /* Add a transparency effect for thumnbail images */
 .demo {
   opacity: 0.6;
+  object-fit: cover;
 }
+
+
 
 .active,
 .demo:hover {
@@ -322,3 +330,10 @@
 
 
  }
+
+
+ .mySlides img{
+  object-fit: cover;
+ }
+
+ 
